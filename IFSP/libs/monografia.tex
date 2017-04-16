@@ -1,0 +1,163 @@
+%% Todas as opcoes da classe abnt (AbnTeX) sao validas.
+%% Outras opcoes sao: quali e tese (dissertacao e' padrao)
+\documentclass[espec]{ppgccufscar}
+%\documentclass[]{abntex2}
+% \usepackage{lmodern}			% Usa a fonte Latin Modern	
+
+%% pacotes incompativeis:
+%%   qualquer pacote de citacoes, como natbib, apalike, cite, etc.
+%% o pacote babel ja vem carregado com ingles e portugues
+%%\usepackage[brazil]{babel}
+%%\usepackage[utf8]{inputenc}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{graphics}
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{verbatim}
+
+\usepackage{indentfirst}% Indenta o primeiro parÃ¡grafo de cada seÃ§Ã£o.
+
+% Color control.
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage{scrextend}
+\sloppy
+
+
+% Soul package: to use the \hl{} command to highlight text, useful to spot "to-do" items.
+% The command \phl is defined so a different highlight color is used by the professor in his/her notes.
+\usepackage{soul}
+%\usepackage{soulutf8}
+\newcommand{\phl}[2][Peach]{{\sethlcolor{#1} \hl{#2}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Definitions
+
+\graphicspath{{../../images/}}
+
+%\bibliographypath{{../../references/}}
+
+\newtheorem{mydef}{Defini\c{c}\~ao}
+
+\newenvironment{bigequation}{\begin{equation} \fontsize{16pt}{20pt}}{\end{equation}}
+
+\newcommand{\cc}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+
+%%%%%% Titulo PDF
+\title{TCC leonardo Almeida}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Altere os campos abaixo para alterar o documento final
+%%%%
+\titulo { Padronização de dados para coleta, apresentação e automação de regras com sistemas de sistemas }
+%%%%
+\autor{Leonardo Almeida Silva Ferreira}
+%%%%
+\orientador[Orientador]{Prof. Dr. Lucas Bueno Ruas de Oliveira}
+%%%%
+%\coorientador{Prof. Dr. XXXX}
+%%%%
+\areaconcentracao{Desenvolvimento de Sistemas}
+%%%%
+\data{Abril/2017}
+%%%%
+\instituicao{Instituto Federal de Educa\c{c}\~ao Ci\^encia e Tecnologia de S\~ao Paulo -- Campus S\~ao Carlos}
+%%%%
+\local{S\~ao Carlos -- SP}
+%%%%
+\comentario{\PPGtipodoc\ apresentada no Curso de Especializa\c{c}\~ao Lato Sensu em Desenvolvimento de Sistemas para Dispositivos M\'oveis do Instituto Federal de Ci\^encia e Tecnologia de S\~ao Paulo - Campus de S\~ao Carlos, como parte dos requisitos para a obten\c{c}\~ao do t\'{\i}tulo de \PPGtipotitulo\ em desenvolvimento de sistemas para dispositivos m\'oveis.}
+%%%%
+\instituicaodetails{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% epigrafre, agradecimentos sao feitos 'na mao'.
+% um dia eu faco alguns comandos para eles ;)
+
+\begin{document} 
+	
+\capa
+\folhaderosto
+%\folhadeaprovacao
+%\endfolhadeaprovacao
+
+%\dedicatoria{A meus pais.}
+%\input {agradecimentos}
+
+%\epigrafe{Um dia.}{Dadavski Shoffstall}
+
+\input{../resumo}
+\input{../abstract}
+
+\listoffigures
+\listoftables
+
+%% sumario
+\tableofcontents
+
+%% aqui comeca o texto da dissertação
+
+\input{../introducao} %% 	Introdução
+
+\input{../capitulo1} %% Contextos envolvidos
+%% 		Computação ubíqua à  SIoT
+%% 		Edge computing e o surgimento da Fog computing
+%% 		Cloud of Things and Social Cloud
+%% 		Social Virtual Objects
+%% 		Web Semântica e Ontologias de IoT
+
+\input{../capitulo2} %% Trabalhos Relacionados
+
+\input{../capitulo3} %% Tecnologias e Plataformas de IoT
+%% 		6LoWPAN
+%% 		MQTT
+%% 		Thingspeak
+%% 		Xively
+%% 		IFTTT
+
+\input{../capitulo4} %% Arquitetura proposta e Padrões Utilizados
+%% 		Arquitetura
+%% 		MQTT
+%% 		Pub-Sub
+%% 		Big-Data
+%% 		Desenvolvimento
+%% 		NodeJS - AngularJS - Material Design
+%% 			plugins - Johnny5/Genisys/AngularFire/AngularMaterial?
+%% 		Cloudmqtt (MQTT)
+%% 		Firebase (Database/ Pub-Sub)
+%% 		Prototipos
+%% 			Arduino
+%% 			NodeMCU
+%% 			Firmata firmware
+%% 		Sensors
+%% 		Mineracao de dados
+%% 			Hadoop Yarn/Spark/Storm
+
+
+\input{../capitulo5} %% Tecnologias Utilizadas
+
+
+\input{../conclusao} %% 	Conclusão
+
+\bibliography{referencias} % bibname=nome do seu arquivo BibTeX
+
+%% DICA: voce pode ir definindo os acronimos ao longo do texto.
+%% Por exemplo, no capitulo 1, vc ta escrevendo:
+%% Segundo Fulano, Model-Driven Development (MDD)\acronym{MDD}{Model-Driven Development} ? uma t?cnica bla bla bla...
+%\acronym{MDD}{Model-Driven Development}
+\listofacronyms
+
+\apendice
+
+\anexo
+	
+\end{document}

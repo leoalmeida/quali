@@ -1,0 +1,131 @@
+%% Todas as opcoes da classe abnt (AbnTeX) sao validas.
+%% Outras opcoes sao: quali e tese (dissertacao e' padrao)
+\documentclass[revisao]{ppgccufscar}
+%\documentclass[]{abntex2}
+% \usepackage{lmodern}			% Usa a fonte Latin Modern	
+
+%% pacotes incompativeis:
+%%   qualquer pacote de citacoes, como natbib, apalike, cite, etc.
+%% o pacote babel ja vem carregado com ingles e portugues
+%\usepackage[brazil]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{graphics}
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{verbatim}
+
+\usepackage{indentfirst}% Indenta o primeiro parágrafo de cada seção.
+
+% Color control.
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% Soul package: to use the \hl{} command to highlight text, useful to spot "to-do" items.
+% The command \phl is defined so a different highlight color is used by the professor in his/her notes.
+\usepackage{soul}
+%\usepackage{soulutf8}
+\newcommand{\phl}[2][Peach]{{\sethlcolor{#1} \hl{#2}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Definitions
+
+\graphicspath{{../../images/}}
+
+%\bibliographypath{{../../references/}}
+
+\newtheorem{mydef}{Defini\c{c}\~ao}
+
+\newenvironment{bigequation}{\begin{equation} \fontsize{16pt}{20pt}}{\end{equation}}
+
+\newcommand{\cc}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+
+%%%%%% Titulo PDF
+\title{Revisao leo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Altere os campos abaixo para alterar o documento final
+%%%%
+\titulo { Trabalho de conclusão da matéria de revisão sistemàtica }
+%%%%
+\autor{Leonardo Almeida Silva Ferreira}
+%%%%
+\orientador[Orientadora]{Profa. Dra. Eloize Rossi Marques Seno}
+%%%%
+%\coorientador{Prof. Dr. XXXX}
+%%%%
+\areaconcentracao{Revisão Sistemática}
+%%%%
+\data{Abril/2017}
+%%%%
+\instituicao{Instituto Federal de Educa\c{c}\~ao Ci\^encia e Tecnologia de S\~ao Paulo -- Campus S\~ao Carlos}
+%%%%
+\local{S\~ao Carlos -- SP}
+%%%%
+\comentario{\PPGtipodoc\ apresentada no Curso de Especializa\c{c}\~ao Lato Sensu em Desenvolvimento de Sistemas para Dispositivos M\'oveis do Instituto Federal de Ci\^encia e Tecnologia de S\~ao Paulo - Campus de S\~ao Carlos, como parte dos requisitos para a obten\c{c}\~ao do t\'{\i}tulo de \PPGtipotitulo\ em desenvolvimento de sistemas para dispositivos m\'oveis.}
+%%%%
+\instituicaodetails{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% epigrafre, agradecimentos sao feitos 'na mao'.
+% um dia eu faco alguns comandos para eles ;)
+
+\begin{document} 
+	
+\capa
+\folhaderosto
+%\folhadeaprovacao
+%\endfolhadeaprovacao
+
+%\dedicatoria{A meus pais.}
+%\input {agradecimentos}
+
+%\epigrafe{Um dia.}{Dadavski Shoffstall}
+
+\input{../resumo}
+\input{../abstract}
+
+\listoffigures
+\listoftables
+
+%% sumario
+\tableofcontents
+
+%% aqui comeca o texto da dissertação
+
+
+\input{../introducao}
+
+\input{../capitulo1} %Introdução
+
+\input{../capitulo2} %Cidades inteligentes e IoT
+
+\input{../capitulo3} %Temas tÃ©cnicos relacionados ao trabalho
+
+\input{../capitulo4} %Outros aspectos que impactam a parte principal descrita anteriormente
+
+\input{../capitulo5} %Proposta de trabalho que serÃ¡ desenvolvida
+
+\input{../conclusao}
+
+\bibliography{referencias} % bibname=nome do seu arquivo BibTeX
+
+%% DICA: voce pode ir definindo os acronimos ao longo do texto.
+%% Por exemplo, no capitulo 1, vc ta escrevendo:
+%% Segundo Fulano, Model-Driven Development (MDD)\acronym{MDD}{Model-Driven Development} ? uma t?cnica bla bla bla...
+%\acronym{MDD}{Model-Driven Development}
+\listofacronyms
+
+\apendice
+
+\anexo
+	
+\end{document}

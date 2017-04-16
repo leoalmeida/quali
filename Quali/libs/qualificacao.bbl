@@ -1,0 +1,13 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.45.2.1 }
+
+\bibitem[FERREIRA, Doltsinis e Lohse 2014]{FERREIRA2014}
+\abntrefinfo{FERREIRA, Doltsinis e Lohse}{FERREIRA; DOLTSINIS; LOHSE}{2014}
+{FERREIRA, P.; DOLTSINIS, S.; LOHSE, N. {Symbiotic assembly systems - A new
+  paradigm}. In:  \emph{{Procedia CIRP}}. [S.l.: s.n.], 2014. v.~17, p. 26?31.}
+
+\end{thebibliography}

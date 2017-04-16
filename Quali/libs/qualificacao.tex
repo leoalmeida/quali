@@ -1,0 +1,133 @@
+%% Todas as opcoes da classe abnt (AbnTeX) sao validas.
+%% Outras opcoes sao: quali e tese (dissertacao e' padrao)
+\documentclass[quali]{ppgccufscar}
+%\documentclass[]{abntex2}
+% \usepackage{lmodern}			% Usa a fonte Latin Modern	
+
+%% pacotes incompativeis:
+%%   qualquer pacote de citacoes, como natbib, apalike, cite, etc.
+%% o pacote babel ja vem carregado com ingles e portugues
+%\usepackage[brazil]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{graphics}
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{verbatim}
+
+\usepackage{indentfirst}% Indenta o primeiro parágrafo de cada seção.
+
+% Color control.
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% Soul package: to use the \hl{} command to highlight text, useful to spot "to-do" items.
+% The command \phl is defined so a different highlight color is used by the professor in his/her notes.
+\usepackage{soul}
+%\usepackage{soulutf8}
+\newcommand{\phl}[2][Peach]{{\sethlcolor{#1} \hl{#2}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Definitions
+
+\graphicspath{{../../images/}}
+%\bibliographypath{{../../references/}}
+
+
+
+\newtheorem{mydef}{Defini\c{c}\~ao}
+
+\newenvironment{bigequation}{\begin{equation} \fontsize{16pt}{20pt}}{\end{equation}}
+
+\newcommand{\cc}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\title{Quali leo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Altere os campos abaixo para alterar o documento final
+%%%% Título da Pesquisa
+\titulo { Tema principal }
+%%%%
+\autor{Leonardo Almeida Silva Ferreira}
+%%%%
+\orientador[Orientador]{Prof. Dr. Helio Cristana Guardia}
+%%%%
+%\coorientador{Prof. Dr. XXXX}
+
+%%%% Área de Concentração da pesquisa
+\areaconcentracao{Sistemas Distribu\'idos}
+
+%%%% Data localizada no rodapé da página
+\data{Abril/2017}
+
+%%%% Nome da instituição (UFSCAR é default)
+%\instituicao{}
+
+%%%% Local localizado no rodapé da página (São Carlos é default)
+%\local{}
+
+%%%% Comentário que fica na 2a pag. em baixo do nome à direita
+\comentario{\PPGtipodoc\ apresentada ao Programa de P\'os-Gradua\c{c}\~ao em Ci\^encia da Computa\c{c}\~ao da Universidade Federal de S\~ao Carlos, como parte dos requisitos para a obten\c{c}\~ao do t\'{\i}tulo de \PPGtipotitulo\ em Ci\^encia da Computa\c{c}\~ao, \'area de concentra\c{c}\~ao: \PPGareaconcentracao}
+
+%%%% Remove ou altera os Detalhes que ficam embaixo do nome da instituição
+%\instituicaodetails{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% epigrafre, agradecimentos sao feitos 'na mao'.
+% um dia eu faco alguns comandos para eles ;)
+
+\begin{document} 
+	
+\capa
+\folhaderosto
+%\folhadeaprovacao
+%\endfolhadeaprovacao
+
+%\dedicatoria{A meus pais.}
+%\input {agradecimentos}
+
+%\epigrafe{Um dia.}{Dadavski Shoffstall}
+
+\input{../resumo}
+\input{../abstract}
+
+\listoffigures
+\listoftables
+
+%% sumario
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% aqui comeca o texto da dissertação
+\input{../capitulo1-introducao} %Introdução
+
+\input{../capitulo2} %Cenários - Cidades inteligentes e IoT
+
+\input{../capitulo3} %Trabalhos Relacionados - Temas tÃ©cnicos relacionados ao trabalho
+
+\input{../capitulo4} %Proposta de trabalho desenvolvida
+
+\input{../capitulo5-conclusao} %Conclusão
+
+
+\bibliography{../../references/central-bibliography} % bibname=nome do seu arquivo BibTeX
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DICA: voce pode ir definindo os acronimos ao longo do texto.
+%% Por exemplo, no capitulo 1, vc ta escrevendo:
+%% Segundo Fulano, Model-Driven Development (MDD)\acronym{MDD}{Model-Driven Development} ? uma t?cnica bla bla bla...
+%\acronym{MDD}{Model-Driven Development}
+\listofacronyms
+
+\apendice
+
+\anexo
+	
+\end{document}

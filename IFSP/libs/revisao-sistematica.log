@@ -1,0 +1,684 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.28)  2 MAR 2017 21:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**revisao-sistematica.tex
+(./revisao-sistematica.tex
+LaTeX2e <2016/03/31> patch level 2
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(./ppgccufscar.cls
+Document Class: ppgccufscar 2011/02/12\ v1.0\ PPGCC UFSCar Dissertations and Th
+esis
+(./abnt.cls (./cvs-id.def)
+Document Class: abnt 2004/11/02 v1.27.2.1 Classe abnt (NBR6024, NBR6027, NBR602
+8, NBR14724)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count79
+\calc@Bcount=\count80
+\calc@Adimen=\dimen102
+\calc@Bdimen=\dimen103
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count81
+\calc@Cskip=\skip43
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+\c@tracingmulticols=\count82
+\mult@box=\box26
+\multicol@leftmargin=\dimen104
+\c@unbalance=\count83
+\c@collectmore=\count84
+\doublecol@number=\count85
+\multicoltolerance=\count86
+\multicolpretolerance=\count87
+\full@width=\dimen105
+\page@free=\dimen106
+\premulticols=\dimen107
+\postmulticols=\dimen108
+\multicolsep=\skip44
+\multicolbaselineskip=\skip45
+\partial@page=\box27
+\last@line=\box28
+\maxbalancingoverflow=\dimen109
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count88
+\c@finalcolumnbadness=\count89
+\last@try=\dimen110
+\multicolovershoot=\dimen111
+\multicolundershoot=\dimen112
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\mc@col@check@num=\count90
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count91
+\c@chapter=\count92
+\c@section=\count93
+\c@subsection=\count94
+\c@subsubsection=\count95
+\c@paragraph=\count96
+\c@subparagraph=\count97
+\c@figure=\count98
+\c@table=\count99
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\bibindent=\dimen113
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\ABNTanapindent=\skip48
+\ABNTsignwidth=\skip49
+\ABNTsignthickness=\skip50
+\ABNTsignskip=\skip51
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+)
+\c@ContinuedFloat=\count100
+)
+(./abntcite.sty (./cvs-id.def)
+Package: abntcite 2003/10/13 v1.26 Chamadas de referencias no texto (NBR10520)
+ (./abntex-abrev.sty (./cvs-id.def)
+Package: abntex-abrev 2003/10/13 v1.3 Abreviacoes
+
+(./nbr10522-1988.def (./cvs-id.def)
+File: nbr10522-1988.def 2003/10/13 v1.2 Abreviacoes bibliograficas (NBR10522:19
+88)
+) (./abntex-abrev-pt_BR.def (./cvs-id.def)
+File: abntex-abrev-pt_BR.def 2003/10/13 v1.2 definicao de abntex-abrev, traduca
+o de termos en_US/pt_BR
+)) (./nbr10520-2002.def (./cvs-id.def)
+File: nbr10520-2002.def 2003/10/13 v1.2 Definicoes para abntcite (NBR10520:2002
+)
+)
+\minimumbiblabelwidth=\skip52
+\ABCIauxlen=\skip53
+\c@ABCIaux=\count101
+\c@ABCImax=\count102
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\biblabelsep=\skip54
+LaTeX Info: Redefining \newblock on input line 562.
+LaTeX Info: Redefining \cite on input line 589.
+\ABCItoken=\toks15
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/04/23 3.9r The Babel package
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count103
+\U@D=\dimen121
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fncychap/fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip55
+\mylen=\skip56
+\myhi=\skip57
+\px=\skip58
+\py=\skip59
+\pyy=\skip60
+\pxx=\skip61
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip62
+\f@ncyO@elh=\skip63
+\f@ncyO@erh=\skip64
+\f@ncyO@olh=\skip65
+\f@ncyO@orh=\skip66
+\f@ncyO@elf=\skip67
+\f@ncyO@erf=\skip68
+\f@ncyO@olf=\skip69
+\f@ncyO@orf=\skip70
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count104
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write3
+\integerpart=\count105
+\decimalpart=\count106
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks16
+)
+\@acronym=\count107
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/was/upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup7
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/06/28 v2.15d AMS math features
+\@mathmargin=\skip71
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen122
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen123
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count108
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count109
+\leftroot@=\count110
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count111
+\DOTSCASE@=\count112
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen124
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count113
+\c@MaxMatrixCols=\count114
+\dotsspace@=\muskip10
+\c@parentequation=\count115
+\dspbrk@lvl=\count116
+\tag@help=\toks20
+\row@=\count117
+\column@=\count118
+\maxfields@=\count119
+\andhelp@=\toks21
+\eqnshift@=\dimen125
+\alignsep@=\dimen126
+\tagshift@=\dimen127
+\tagwidth@=\dimen128
+\totwidth@=\dimen129
+\lineht@=\dimen130
+\@envbody=\toks22
+\multlinegap=\skip72
+\multlinetaggap=\skip73
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count120
+))
+\Gin@req@height=\dimen131
+\Gin@req@width=\dimen132
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks24
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen133
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks25
+\verbatim@line=\toks26
+\verbatim@in@stream=\read1
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks27
+\SOUL@lasttoken=\toks28
+\SOUL@cmds=\toks29
+\SOUL@buffer=\toks30
+\SOUL@token=\toks31
+\SOUL@spaceskip=\skip74
+\SOUL@ttwidth=\dimen134
+\SOUL@uldp=\dimen135
+\SOUL@ulht=\dimen136
+)
+\c@mydef=\count121
+
+(./revisao-sistematica.aux)
+\openout1 = `revisao-sistematica.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 81.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count122
+\scratchdimen=\dimen137
+\scratchbox=\box54
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen138
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks33
+) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for T1+phv on input line 83.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 83.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 83
+.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 83
+.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 83
+.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 83
+.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 83.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 83.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 83.
+LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 83.
+ [0
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 84--84
+  $[]$
+ []
+
+[1] (../resumo.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <20.74> not available
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+ [2
+
+
+]) (../abstract.tex [3
+
+
+]) (./revisao-sistematica.lof)
+\tf@lof=\write4
+\openout4 = `revisao-sistematica.lof'.
+
+
+[4
+
+] (./revisao-sistematica.lot)
+\tf@lot=\write5
+\openout5 = `revisao-sistematica.lot'.
+
+ [5
+
+] (./revisao-sistematica.toc
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
+ [6
+
+])
+\tf@toc=\write6
+\openout6 = `revisao-sistematica.toc'.
+
+ [7]
+(../introducao.tex
+Cap\'{\i }tulo 1.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <36> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+<../../images/Grafo_exemplo_mestrado.png, id=31, 729.72626pt x 304.13625pt>
+File: ../../images/Grafo_exemplo_mestrado.png Graphic file (type png)
+
+<use ../../images/Grafo_exemplo_mestrado.png>
+Package pdftex.def Info: ../../images/Grafo_exemplo_mestrado.png used on input 
+line 5.
+(pdftex.def)             Requested size: 437.83914pt x 182.48315pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 10.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 11.
+) (../capitulo1.tex [8
+
+
+ <../../images/Grafo_exemplo_mestrado.png>] [9]
+Cap\'{\i }tulo 2.
+
+LaTeX Warning: Citation `FERREIRA2014' on page 10 undefined on input line 6.
+
+) (../capitulo2.tex [10
+
+]
+Cap\'{\i }tulo 3.
+) (../capitulo3.tex [11
+
+]
+Cap\'{\i }tulo 4.
+) (../capitulo4.tex [12
+
+]
+Cap\'{\i }tulo 5.
+) (../capitulo5.tex [13
+
+]
+Cap\'{\i }tulo 6.
+) (../conclusao.tex [14
+
+]
+Cap\'{\i }tulo 7.
+) (./revisao-sistematica.bbl [15
+
+]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 8.
+
+) [16
+
+]
++-------------------------------------------------------------------+
+| Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
+|                  http://abntex.codigolivre.org.br                 |
++-------------------------------------------------------------------+
+[17
+
+] (./revisao-sistematica.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6760 strings out of 493013
+ 95229 string characters out of 6133343
+ 174974 words of memory out of 5000000
+ 10058 multiletter control sequences out of 15000+600000
+ 85755 words of font info for 101 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,11n,45p,809b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/urw/times/utmri8a.pfb>
+Output written on revisao-sistematica.pdf (18 pages, 72656 bytes).
+PDF statistics:
+ 82 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
