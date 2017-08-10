@@ -1,0 +1,156 @@
+%% Todas as opcoes da classe abnt (AbnTeX) sao validas.
+%% Outras opcoes sao: quali e tese (dissertacao e' padrao)
+\documentclass[quali]{ppgccufscar}
+%\documentclass[]{abntex2}
+% \usepackage{lmodern}			% Usa a fonte Latin Modern	
+
+%% pacotes incompativeis:
+%%   qualquer pacote de citacoes, como natbib, apalike, cite, etc.
+%% o pacote babel ja vem carregado com ingles e portugues
+%\usepackage[brazil]{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{graphics}
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{verbatim}
+
+\usepackage{indentfirst}% Indenta o primeiro parágrafo de cada seção.
+
+% Color control.
+\usepackage[usenames,dvipsnames]{xcolor}
+
+
+% Soul package: to use the \hl{} command to highlight text, useful to spot "to-do" items.
+% The command \phl is defined so a different highlight color is used by the professor in his/her notes.
+\usepackage{soul}
+%\usepackage{soulutf8}
+\newcommand{\phl}[2][Peach]{{\sethlcolor{#1} \hl{#2}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Definitions
+
+\graphicspath{{../../images/}}
+%\bibliographypath{{../../references/}}
+
+
+
+\newtheorem{mydef}{Defini\c{c}\~ao}
+
+\newenvironment{bigequation}{\begin{equation} \fontsize{16pt}{20pt}}{\end{equation}}
+
+\newcommand{\cc}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\title{Quali leo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Altere os campos abaixo para alterar o documento final
+	%%%% Título da Pesquisa
+	\titulo { Arquitetura de controle automatizado do ambiente produtivo em métodos alternativos de agricultura }
+	%%%%
+	\autor{Leonardo Almeida Silva Ferreira}
+	%%%%
+	\orientador[Orientador]{Prof. Dr. Helio Cristana Guardia}
+	%%%%
+	%\coorientador{Prof. Dr. XXXX}
+	
+	%%%% Área de Concentração da pesquisa
+	\areaconcentracao{Sistemas Distribu\'idos}
+	
+	%%%% Data localizada no rodapé da página
+	\data{Abril/2017}
+	
+	%%%% Nome da instituição (UFSCAR é default)
+	%\instituicao{}
+	
+	%%%% Local localizado no rodapé da página (São Carlos é default)
+	%\local{}
+
+%%%% Comentário que fica na 2a pag. em baixo do nome à direita
+\comentario{\PPGtipodoc\ apresentada ao Programa de P\'os-Gradua\c{c}\~ao em Ci\^encia da Computa\c{c}\~ao da Universidade Federal de S\~ao Carlos, como parte dos requisitos para a obten\c{c}\~ao do t\'{\i}tulo de \PPGtipotitulo\ em Ci\^encia da Computa\c{c}\~ao, \'area de concentra\c{c}\~ao: \PPGareaconcentracao}
+
+%%%% Remove ou altera os Detalhes que ficam embaixo do nome da instituição
+%\instituicaodetails{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% epigrafre, agradecimentos sao feitos 'na mao'.
+% um dia eu faco alguns comandos para eles ;)
+
+\begin{document} 
+	
+\capa
+\folhaderosto
+%\folhadeaprovacao
+%\endfolhadeaprovacao
+
+%\dedicatoria{A meus pais.}
+%\input {agradecimentos}
+
+%\input{../0inicio/agradecimentos}
+
+%\epigrafe{Um dia.}{Dadavski Shoffstall}
+
+\input{../0inicio/resumo}
+\input{../0inicio/abstract}
+
+\listoffigures
+\listoftables
+
+%% sumario
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% aqui comeca o texto da dissertação
+\input{../1introducao/0introducao} %Cap 1 - Introdução
+\input{../1introducao/1contextualizacao} %Seção 1.1 - Identificação do contexto o qual o trabalho será baseado
+\input{../1introducao/2objetivos} %Seção 1.2 - Objetivos do trabalho
+\input{../1introducao/3metodologia} %Seção 1.3 - Identificação dos capítulos e e breve resumo
+\input{../1introducao/4organizacao_do_trabalho} %Seção 1.3 - Identificação dos capítulos e e breve resumo
+
+\input{../2objetos_de_estudo/0temas_relacionados} %Cap 2 - Objetos de estudo e temas relacionados
+\input{../2objetos_de_estudo/1objetos_de_estudo} %Seção 2.1 - Objetos de Estudo e Métodos 
+\input{../2objetos_de_estudo/2iot} %Seção 2.2 - Definição de Iot 
+\input{../2objetos_de_estudo/3mecanismos_de_nomeacao} %Seção 2.3 Mecanismo de nomeação do conhecimento
+\input{../2objetos_de_estudo/4modelos_classificacao_sensores} %Seção 2.4 Sistema de classificação dos sensores
+\input{../2objetos_de_estudo/5modelos_agricolas} %Seção 2.5 - Métodos agrícolas relacionados ao trabalho
+\input{../2objetos_de_estudo/6outros_cenarios} %Seção 2.6 - Outros Cenários de utilização
+
+\input{../3proposta_trabalho/0proposta_de_trabalho} %Cap 3 - Descrição do trabalho que será desenvolvido
+\input{../3proposta_trabalho/1arquitetura_proposta} %Seção 3.1 - Arqtuitetura proposta para dar solução ao problema 
+\input{../3proposta_trabalho/2modelo} %Seção 3.2 - Modelo de dados utilizado no trabalho para definição do conhecimento
+\input{../3proposta_trabalho/3ferramenta} %Seção 3.3 - Proposta de ferramenta a ser desenvolvida para aplicação do estudo 
+\input{../3proposta_trabalho/4outras_ferramentas} %Seção 3.4 - Formas de utilização de outras ferramentas no trabalho (Apache SparkStreaming, Apache Kafka-Mosca)
+\input{../3proposta_trabalho/5metodo_agricola} %Seção 3.5 - Método agrícola utilizado para aplicação no trabalho (micro-aspersão)
+
+\input{../4resultados_esperados/0resultados_esperados} %Cap 4 - Resultados Esperados e Implementação
+\input{../4resultados_esperados/1servicos} %Seção 4.1 - Definição
+
+\input{../5conclusao/0conclusao} %Cap 5 -Conclusão
+\input{../5conclusao/1principais_contribuicoes}  %Seção 5.2 - Principais Contribuições
+\input{../5conclusao/2trabalhos_futuros} %Seção 5.3 - Trabalhos Futuros
+\input{../5conclusao/3consideracoes_finais}  %Seção 5.4 - Considerações Finais
+
+
+\bibliography{../../references/central-bibliography} % bibname=nome do seu arquivo BibTeX
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DICA: voce pode ir definindo os acronimos ao longo do texto.
+%% Por exemplo, no capitulo 1, vc ta escrevendo:
+%% Segundo Fulano, Model-Driven Development (MDD)\acronym{MDD}{Model-Driven Development} ? uma t?cnica bla bla bla...
+%\acronym{MDD}{Model-Driven Development}
+\listofacronyms
+
+
+\apendice
+
+\anexo
+	
+\end{document}

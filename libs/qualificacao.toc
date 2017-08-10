@@ -1,0 +1,72 @@
+\select@language {brazil}
+\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {1\ --}Introdu\c {c}\~ao}{10}
+\contentsline {section}{\numberline {1.1}Contextualiza\c {c}\~ao}{10}
+\contentsline {section}{\numberline {1.2}Objetivos}{12}
+\contentsline {section}{\numberline {1.3}Metodologia}{13}
+\contentsline {section}{\numberline {1.4}Organiza\c {c}\~ao do Trabalho}{14}
+\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {2\ --}Trabalhos Relacionados}{15}
+\contentsline {section}{\numberline {2.1}Objetos de estudo e m\'etodos}{15}
+\contentsline {subsection}{\numberline {2.1.1}RSSF}{15}
+\contentsline {subsection}{\numberline {2.1.2}Sensores como servi\c co}{16}
+\contentsline {subsection}{\numberline {2.1.3}Sensores}{16}
+\contentsline {subsection}{\numberline {2.1.4}Sinks e algoritmos de coleta de dados}{16}
+\contentsline {subsection}{\numberline {2.1.5}Ontologias}{16}
+\contentsline {subsection}{\numberline {2.1.6}Modelagem dos Dados}{16}
+\contentsline {subsection}{\numberline {2.1.7}Social Virtual Objects}{16}
+\contentsline {subsection}{\numberline {2.1.8}Arquiteturas para IoT}{16}
+\contentsline {section}{\numberline {2.2}Objetos de estudo e m\'etodos}{16}
+\contentsline {subsection}{\numberline {2.2.1}RSSF}{16}
+\contentsline {subsection}{\numberline {2.2.2}Sensores como servi\c co}{16}
+\contentsline {subsection}{\numberline {2.2.3}Sensores}{16}
+\contentsline {subsection}{\numberline {2.2.4}Sinks e algoritmos de coleta de dados}{16}
+\contentsline {subsection}{\numberline {2.2.5}Ontologias}{16}
+\contentsline {subsection}{\numberline {2.2.6}Modelagem dos Dados}{16}
+\contentsline {subsection}{\numberline {2.2.7}Social Virtual Objects}{16}
+\contentsline {subsection}{\numberline {2.2.8}Arquiteturas para IoT}{16}
+\contentsline {section}{\numberline {2.3}Identifica\c {c}\~{a}o dos recursos na rede}{17}
+\contentsline {subsection}{\numberline {2.3.1}Agrupamento de recursos Federa\c {c}\~{o}es}{17}
+\contentsline {subsection}{\numberline {2.3.2}Agrupamento utilizando RNS}{17}
+\contentsline {section}{\numberline {2.4}Modelos de classifica\c {c}\~{a}o e sensores analisados}{17}
+\contentsline {section}{\numberline {2.5}Modelos agr\'{i}colas relacionados ao trabalho}{20}
+\contentsline {subsection}{\numberline {2.5.1}An\~{a}lise de recursos naturais}{21}
+\contentsline {subsection}{\numberline {2.5.2}Estrat\'egias para armazenamento de recursos naturais}{21}
+\contentsline {subsection}{\numberline {2.5.3}Sistemas de Irriga\c {c}\~{a}o}{21}
+\contentsline {subsection}{\numberline {2.5.4}Sistemas para distribui\c {c}\~{a}o de outros recursos}{21}
+\contentsline {subsection}{\numberline {2.5.5}Irriga\c {c}\~{a}o por micro-asper\c {c}\~{a}o}{21}
+\contentsline {subsection}{\numberline {2.5.6}An\~{a}lise de Insetos}{21}
+\contentsline {subsection}{\numberline {2.5.7}Formas de manipula\c {c}\~{a}o de fertilizantes e defens\IeC {\'\i }vos}{21}
+\contentsline {subsection}{\numberline {2.5.8}Identifica\c {c}\~{a}o e An\~{a}lise do meio ambiente}{21}
+\contentsline {section}{\numberline {2.6}Outros Cen\'arios}{21}
+\contentsline {subsection}{\numberline {2.6.1}Automotivo}{21}
+\contentsline {subsection}{\numberline {2.6.2}Industrial}{21}
+\contentsline {subsection}{\numberline {2.6.3}Sa\'ude}{21}
+\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {3\ --}Proposta de trabalho}{22}
+\contentsline {section}{\numberline {3.1}Arquitetura Proposta}{22}
+\contentsline {subsection}{\numberline {3.1.1}Descri\c {c}\~{a}o}{22}
+\contentsline {section}{\numberline {3.2}Modelo Utilizado}{22}
+\contentsline {subsection}{\numberline {3.2.1}Modelo de conhecimento}{22}
+\contentsline {subsection}{\numberline {3.2.2}Defini\c {c}\~{a}o dos Objetos}{22}
+\contentsline {subsection}{\numberline {3.2.3}Estrutura em Grafo}{22}
+\contentsline {subsection}{\numberline {3.2.4}Processamento dos dados}{22}
+\contentsline {subsection}{\numberline {3.2.5}Processamento dos dados}{22}
+\contentsline {paragraph}{Modelo B\'{a}sico}{22}
+\contentsline {paragraph}{Modelo Est\'{a}tico Complexo}{22}
+\contentsline {paragraph}{Modelo Din\^{a}mico Complexo}{23}
+\contentsline {section}{\numberline {3.3}Ferramenta Desenvolvida}{24}
+\contentsline {section}{\numberline {3.4}Outras Ferramentas}{24}
+\contentsline {section}{\numberline {3.5}M\'{e}todo agropastoril}{24}
+\contentsline {subsection}{\numberline {3.5.1}Coleta e Armazenamento}{24}
+\contentsline {subsubsection}{\numberline {3.5.1.1}\'{a}gua}{24}
+\contentsline {subsubsection}{\numberline {3.5.1.2}Recursos Minerais}{24}
+\contentsline {subsubsection}{\numberline {3.5.1.3}Recursos Qu\'{i}micos}{24}
+\contentsline {subsubsection}{\numberline {3.5.1.4}Outros tipos de recursos}{24}
+\contentsline {subsection}{\numberline {3.5.2}Transporte e aplica\c {c}\~{a}o}{24}
+\contentsline {subsection}{\numberline {3.5.3}Defini\'{c}\~{o}es B\'{a}sicas}{24}
+\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {4\ --}Resultados Esperados}{27}
+\contentsline {section}{\numberline {4.1}Definicao}{27}
+\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {5\ --}Conclus\~ao}{28}
+\contentsline {section}{\numberline {5.1}Principais Contribui\c {c}\~{o}es}{28}
+\contentsline {section}{\numberline {5.2}Trabalhos Futuros}{29}
+\contentsline {section}{\numberline {5.3}Considera\c {c}\~{o}es finais}{29}
+\contentsline {chapter}{Refer\^encias}{30}
+\contentsline {chapter}{Gloss\'ario}{31}
