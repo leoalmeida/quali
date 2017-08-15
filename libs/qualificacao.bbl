@@ -5,4 +5,28 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.45.2.1 }
 
+\bibitem[CHEN et al. 2014]{Chen2014}
+\abntrefinfo{CHEN et al.}{CHEN et al.}{2014}
+{CHEN, Y. et al. {Time-Reversal Wireless Paradigm for Green Internet of Things:
+  An Overview}. In:  \emph{{IEEE Internet of Things Journal}}. [s.n.], 2014.
+  v.~1, n.~1, p.~1?1.
+ISSN 2327-4662. Dispon{\'\i}vel em:
+  $<$http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6750095$>$.}
+
+\bibitem[Weiser 1991]{Weiser1991}
+\abntrefinfo{Weiser}{WEISER}{1991}
+{WEISER, M. The computer for the 21st century.
+\emph{Scientific American}, v.~265, n.~3, p. 94--104, 1991.
+ISSN 1559-1662.
+Dispon{\'\i}vel em:
+  $<$http://www.nature.com/scientificamerican/journal/v265/n3/full/scientificamerican0991-94.html$>$.}
+
+\bibitem[Weiser e Brown 1997]{Weiser:1997:CAC:504928.504934}
+\abntrefinfo{Weiser e Brown}{WEISER; BROWN}{1997}
+{WEISER, M.; BROWN, J.~S. The coming age of calm technolgy. In:  DENNING,
+  P.~J.; METCALFE, R.~M. (Ed.). \emph{Beyond Calculation}. New York, NY, USA:
+  Copernicus, 1997. cap. The Coming Age of Calm Technolgy, p. 75--85.
+ISBN 0-38794932-1.
+Dispon{\'\i}vel em: $<$http://dl.acm.org/citation.cfm?id=504928.504934$>$.}
+
 \end{thebibliography}
