@@ -21,6 +21,12 @@ ISSN 1559-1662.
 Dispon{\'\i}vel em:
   $<$http://www.nature.com/scientificamerican/journal/v265/n3/full/scientificamerican0991-94.html$>$.}
 
+\bibitem[Weiser 1993]{Weiser1993}
+\abntrefinfo{Weiser}{WEISER}{1993}
+{WEISER, M. Hot topics-ubiquitous computing.
+\emph{Computer}, v.~26, n.~10, p. 71--72, Oct 1993.
+ISSN 0018-9162.}
+
 \bibitem[Weiser e Brown 1997]{Weiser:1997:CAC:504928.504934}
 \abntrefinfo{Weiser e Brown}{WEISER; BROWN}{1997}
 {WEISER, M.; BROWN, J.~S. The coming age of calm technolgy. In:  DENNING,
@@ -28,5 +34,12 @@ Dispon{\'\i}vel em:
   Copernicus, 1997. cap. The Coming Age of Calm Technolgy, p. 75--85.
 ISBN 0-38794932-1.
 Dispon{\'\i}vel em: $<$http://dl.acm.org/citation.cfm?id=504928.504934$>$.}
+
+\bibitem[Weiser, Gold e Brown 1999]{Weiser1999}
+\abntrefinfo{Weiser, Gold e Brown}{WEISER; GOLD; BROWN}{1999}
+{WEISER, M.; GOLD, R.; BROWN, J.~S. The origins of ubiquitous computing
+  research at parc in the late 1980s.
+\emph{IBM Systems Journal}, v.~38, n.~4, p. 693--696, 1999.
+ISSN 0018-8670.}
 
 \end{thebibliography}

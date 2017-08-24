@@ -21,12 +21,16 @@ Warning--I didn't find a database entry for "ISO14044-2006"
 Warning--I didn't find a database entry for "PBACV2017"
 Warning--I didn't find a database entry for "SICV2017"
 Warning--I didn't find a database entry for "DEFARIAS2017128"
-Warning--I didn't find a database entry for "Ueyama002840382"
-Warning--I didn't find a database entry for "Furquim002744726"
 Warning--I didn't find a database entry for "Silva2009"
 Warning--I didn't find a database entry for "SensoresXXXX"
 Warning--I didn't find a database entry for "LECKER2010"
+Warning--I didn't find a database entry for "Ueyama002840382"
+Warning--I didn't find a database entry for "Furquim002744726"
 Warning--I didn't find a database entry for "CENSOAGRO2006"
+Warning--I didn't find a database entry for "CHEN201649"
+Warning--I didn't find a database entry for "thomazinisensores"
+Warning--I didn't find a database entry for "akyildiz2002survey"
+Warning--I didn't find a database entry for "LSIR-REPORT-2006-001"
 Warning--I didn't find a database entry for "Santos2014"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -38,45 +42,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de d?vidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 3 entries,
+You've used 5 entries,
             6480 wiz_defined-function locations,
-            1218 strings with 10356 characters,
-and the built_in function-call counts, 3660 in all, are:
-= -- 435
-> -- 98
-< -- 10
-+ -- 85
-- -- 29
-* -- 254
-:= -- 539
-add.period$ -- 20
-call.type$ -- 3
-change.case$ -- 34
-chr.to.int$ -- 9
-cite$ -- 3
-duplicate$ -- 154
-empty$ -- 232
-format.name$ -- 146
-if$ -- 871
+            1244 strings with 10712 characters,
+and the built_in function-call counts, 5393 in all, are:
+= -- 555
+> -- 166
+< -- 18
++ -- 110
+- -- 49
+* -- 391
+:= -- 763
+add.period$ -- 28
+call.type$ -- 5
+change.case$ -- 56
+chr.to.int$ -- 17
+cite$ -- 5
+duplicate$ -- 247
+empty$ -- 348
+format.name$ -- 239
+if$ -- 1279
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 56
-newline$ -- 26
-num.names$ -- 16
-pop$ -- 95
+missing$ -- 92
+newline$ -- 38
+num.names$ -- 26
+pop$ -- 136
 preamble$ -- 1
-purify$ -- 12
+purify$ -- 20
 quote$ -- 0
-skip$ -- 179
+skip$ -- 265
 stack$ -- 1
-substring$ -- 160
-swap$ -- 88
-text.length$ -- 8
+substring$ -- 233
+swap$ -- 144
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 2
 warning$ -- 0
-while$ -- 28
+while$ -- 43
 width$ -- 0
-write$ -- 66
-(There were 17 warnings)
+write$ -- 102
+(There were 21 warnings)

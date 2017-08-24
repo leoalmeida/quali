@@ -20,11 +20,11 @@
 %% opcao para escolher se a monografia e' de quali, dissertacao (default)
 %% ou tese.
 %%
-\providecommand{\PPGtipodoc}{Disserta\c{c}\~ao}
+\providecommand{\PPGtipodoc}{Dissertação}
 \providecommand{\PPGtipotitulo}{Mestre}
 
 \DeclareOption{quali}{%
-	\renewcommand{\PPGtipodoc}{Qualifica\c{c}\~ao}
+	\renewcommand{\PPGtipodoc}{Qualificação}
 }
 
 \DeclareOption{tese}{%
@@ -33,7 +33,7 @@
 }
 
 \DeclareOption{revisao}{%
-	\renewcommand{\PPGtipodoc}{Revis\~ao Sistem\'atica}
+	\renewcommand{\PPGtipodoc}{Revisão Sistemática}
 }
 
 \DeclareOption{espec}{%
@@ -82,9 +82,9 @@
 \newcommand{\areaconcentracao}[1]{\renewcommand{\PPGareaconcentracao}{#1}}
 
 %% colocando valores default utilizado nas monografias.
-\instituicao{Universidade Federal de S\~ao Carlos}
-\local{S\~ao Carlos -- SP}
-\comentario{\PPGtipodoc\ apresentada ao Programa de P\'os-Gradua\c{c}\~ao em Ci\^encia da Computa\c{c}\~ao da Universidade Federal de S\~ao Carlos, como parte dos requisitos para a obten\c{c}\~ao do t\'{\i}tulo de \PPGtipotitulo\ em Ci\^encia da Computa\c{c}\~ao, \'area de concentra\c{c}\~ao: \PPGareaconcentracao}
+\instituicao{Universidade Federal de São Carlos}
+\local{São Carlos -- SP}
+\comentario{\PPGtipodoc\ apresentada ao Programa de Pós-Graduação em Ciência da Computação da Universidade Federal de São Carlos, como parte dos requisitos para a obtenção do título de \PPGtipotitulo\ em Ciência da Computação, área de concentração: \PPGareaconcentracao}
 
 %%
 %% aquele resuminho embaixo do capitulo
@@ -104,8 +104,8 @@
 % novos comandos
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \providecommand{\ABNTinstituicaodetails}{%
-Centro de Ci\^encias Exatas e de Tecnologia\par
-Programa de P\'os-Gradua\c{c}\~ao Em Ci\^encia da Computa\c{c}\~ao}
+Centro de Ciências Exatas e de Tecnologia\par
+Programa de Pós-Graduação Em Ciência da Computação}
 
 \newcommand{\instituicaodetails}[1]{\renewcommand{\ABNTinstituicaodetails}{#1}}
 \newcommand{\instituicaodetailsformat}{\sffamily\MakeUppercase}
@@ -698,7 +698,7 @@ Programa de P\'os-Gradua\c{c}\~ao Em Ci\^encia da Computa\c{c}\~ao}
 %% fim do codigo roubado
 
 \makeatletter
-  \newcommand{\@glossaryname}{Gloss\'ario}
+  \newcommand{\@glossaryname}{Glossário}
 	\newcount\@acronym\@acronym0
 	\newcommand\acronym[2]{%
 	\global\@namedef{PPGCCAcronymDef:\expandafter\the\@acronym}{#1}
