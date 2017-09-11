@@ -1,17 +1,30 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitetura RSSF padrão\relax }}{18}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Projeto e-Noé\relax }}{19}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Estabelecimentos agropecuários em relação aos tipos de agricultura\relax }}{20}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Estabelecimentos agropecuários familiares em cada regiões administrativa\relax }}{21}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Principais componentes de um sistema de irrigação\relax }}{22}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Consumo de água\relax }}{24}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Exemplo de conversão feita com sensores\relax }}{25}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Processo básico em um objeto inteligente\relax }}{26}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Faixas de luz capturadas por cada tipo de sensor\relax }}{28}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitetura RSSF padrão\relax }}{35}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Projeto e-Noé\relax }}{35}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Arquiteteura 1\relax }}{46}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Arquiteteura 2\relax }}{47}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de sequência 1\relax }}{47}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Diagrama de sequência 2\relax }}{48}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Infraestrtura\relax }}{49}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Visão física de uma rede de sensores\relax }}{20}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visão orientada aos serviços dentro de uma rede de sensores\relax }}{23}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Arquitetura alto nível GSN\relax }}{24}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitetura OpenIoT\relax }}{26}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Arquitetura OpenIoT\relax }}{29}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Arquitetura OpenIoT\relax }}{29}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitetura OpenIoT\relax }}{32}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Esquema de um Descritor de serviço\relax }}{33}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Esquema de um Sensor (o esquema OSMO está incluso no OSDSpec) \relax }}{34}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Esquema de um tipo de sensor\relax }}{35}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Esquema de um identificador\relax }}{35}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Esquema de um identificador\relax }}{36}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Concepção da arquitetura dividida em 3 partes \relax }}{38}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Arquitetura CA4IOT em nível de componentes\relax }}{41}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Arquitetura CA4IOT\relax }}{42}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Arquitetura CA4IOT\relax }}{42}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Arquitetura CA4IOT\relax }}{43}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Arquitetura CA4IOT\relax }}{43}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Arquitetura CA4IOT\relax }}{44}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Arquitetura do OpenIoT Full extendida\relax }}{48}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Arquitetura do OpenIoT Light extendida\relax }}{48}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de Stados do Scheduler extendido\relax }}{49}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Relacionamento de dados extendido\relax }}{49}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Diagrama de sequência 1\relax }}{50}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Diagrama de sequência 2\relax }}{51}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Exemplo de Contexto\relax }}{52}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Representação do ciclo do Conhecimento\relax }}{52}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Ciclo de Vida dos Objetos Virtuais\relax }}{53}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Arquiteteura 2\relax }}{53}

@@ -30,6 +30,9 @@
 
 %\usepackage{fontspec}\setmainfont{Arial Unicode}
 
+\usepackage{scrextend}
+\addtokomafont{labelinglabel}{\sffamily\bfseries}
+
 
 % Soul package: to use the \hl{} command to highlight text, useful to spot "to-do" items.
 % The command \phl is defined so a different highlight color is used by the professor in his/her notes.
@@ -57,7 +60,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Altere os campos abaixo para alterar o documento final
 	%%%% Título da Pesquisa
-	\titulo { Arquitetura de controle automatizado do ambiente produtivo em métodos alternativos de agricultura familiar}
+	\titulo { Middleware para arquiteturas de IoT de controle dinãmico de dispositivos conectados, baseado em sua localização e contexto }
 	%%%%
 	\autor{Leonardo Almeida Silva Ferreira}
 	%%%%
@@ -69,7 +72,7 @@
 	\areaconcentracao{Sistemas Distribuídos}
 	
 	%%%% Data localizada no rodapé da página
-	\data{Abril/2017}
+	\data{setembro/2017}
 	
 	%%%% Nome da instituição (UFSCAR é default)
 	%\instituicao{}
@@ -115,69 +118,41 @@
 
 %% Parte Introdutória
 
-\input{../1definicaoTema/0introducao/0introducao} %Cap 1 - Introdução
-\input{../1definicaoTema/0introducao/1contextualizacao} %Seção 1.1 - Identificação do contexto o qual o trabalho será baseado
-\input{../1definicaoTema/0introducao/2objetivos} %Seção 1.2 - Objetivos do trabalho
-\input{../1definicaoTema/0introducao/3metodologia} %Seção 1.3 - Identificação dos capítulos e e breve resumo
-\input{../1definicaoTema/0introducao/4organizacao} %Seção 1.3 - Identificação dos capítulos e e breve resumo
+\input{../0introducao/0introducao} %Cap 1 - Introdução
+\input{../0introducao/0-1contextualizacao} %Seção 1.1 - Identificação do contexto o qual o
+\input{../0introducao/2objetivos} %Seção 1.2 - Objetivos do trabalho trabalho será baseado
+\input{../0introducao/3metodologia} %Seção 1.3 - Identificação dos capítulos e e breve resumo\\
+\input{../0introducao/4organizacao} %Seção 1.3 - Identificação dos capítulos e e breve resumo
+%\input{../0introducao/1contextualizacao} %Seção 1.1 - Identificação do contexto o qual o trabalho será baseado
+%\input{../0introducao/2objetivos} %Seção 1.2 - Objetivos do trabalho
+%\input{../0introducao/3metodologia} %Seção 1.3 - Identificação dos capítulos e e breve resumo
+%\input{../0introducao/4organizacao} %Seção 1.3 - Identificação dos capítulos e e breve resumo
 
-\input{../1definicaoTema/2temas_de_estudo/0temas_relacionados} %Cap 2 - Objetos de estudo e temas relacionados
-\input{../1definicaoTema/2temas_de_estudo/1iot} %Seção 2.1 - Definição de Iot 
-\input{../1definicaoTema/2temas_de_estudo/2rssf} %Seção 2.2 Rede de sensores sem fio 
-\input{../1definicaoTema/2temas_de_estudo/3agricultura} %Seção 2.3 - Métodos agrícolas relacionados ao trabalho
- 
-\input{../1definicaoTema/5sensores/0sensores} %Seção 3.0 classificação dos sensores
-\input{../1definicaoTema/5sensores/1temperatura} %Seção 3.1 - Objetos de Estudo, Métodos de nomeação do conhecimento e utilização de sensores como serviços
-\input{../1definicaoTema/5sensores/2luminosidade} 
-\input{../1definicaoTema/5sensores/3humidade} 
-\input{../1definicaoTema/5sensores/4NPK}
-\input{../1definicaoTema/5sensores/5qualidadeagua}
-\input{../1definicaoTema/5sensores/6insetos}
-%\input{../1definicaoTema/5sensores/7sensoresQuimicos}
-\input{../1definicaoTema/5sensores/8densidade}
-\input{../1definicaoTema/5sensores/90act-relays}
-\input{../1definicaoTema/5sensores/91act-solenoides}
-\input{../1definicaoTema/5sensores/92act-controladores}
-	
-\input{../1definicaoTema/7arquiteturas/0arquiteturas} %Seção 4.0 definição dos modelos e arquieteturas
-\input{../1definicaoTema/7arquiteturas/1sensoresComoServicos} %Seção 4.1 - 
-\input{../1definicaoTema/7arquiteturas/2identificacaoRecursosServicos} %Seção 4.2 Mecanismo de identificação
-\input{../1definicaoTema/7arquiteturas/3IoTSemantico} %Seção 4.3 - Uso de Semântica em plataforma de IoT para identificação dos recursos
-\input{../1definicaoTema/7arquiteturas/4ontologias} %Seção 4.4 - uso de ontologias na definição de semânticas para plataformas de IoT
-\input{../1definicaoTema/7arquiteturas/5SVO} %Seção 4.5 - definição de Social Virtual Object 
-\input{../1definicaoTema/7arquiteturas/6modeloGSN} %Seção 4.6 - 
-\input{../1definicaoTema/7arquiteturas/7plataformaThingSpeak} %Seção 4.7 - 
-\input{../1definicaoTema/7arquiteturas/8plataformaPerera} %Seção 4.8 - 
-\input{../1definicaoTema/7arquiteturas/9modeloCascom} %Seção 4.9 -
-\input{../1definicaoTema/7arquiteturas/10analiseCicloVida}
+\input{../1definicaoTema/0temas_relacionados} %Cap 2 - Objetos de estudo e temas relacionados
+\input{../1definicaoTema/1iot} %Seção 2.1 - Definição de Iot 
+\input{../1definicaoTema/3IoTSemantico} %Seção 4.3 - Uso de Semântica em plataforma de IoT para identificação dos recursos
+\input{../1definicaoTema/6modeloGSN} %Seção 4.6 - 
+\input{../1definicaoTema/7plataformaOpenIoT} %Seção 4.7 - 
+\input{../1definicaoTema/8plataformaCA4IOT} %Seção 4.7 - 
+%\input{../1definicaoTema/9modeloCascom} %Seção 4.8 -
 
-\input{../1definicaoTema/9agricultura/0agricultura}
-\input{../1definicaoTema/9agricultura/1recursos_naturais}
-\input{../1definicaoTema/9agricultura/2irrigacao}
-\input{../1definicaoTema/9agricultura/3armazenamento}
-
-%%\input{../2temas_de_estudo/6outros_cenarios} %Seção 2.6 - Outros Cenários de utilização
 
 
 %% Parte de desenvolvimento do trabalho
 
 
 \input{../5proposta/0proposta_de_trabalho} %Cap 3 - Descrição do trabalho que será desenvolvido
-\input{../5proposta/1arquitetura_proposta} %Seção 3.1 - Arqtuitetura proposta para dar solução ao problema 
-\input{../5proposta/2modelo} %Seção 3.2 - Modelo de dados utilizado no trabalho para definição do conhecimento
-\input{../5proposta/3ferramenta} %Seção 3.3 - Proposta de ferramenta a ser desenvolvida para aplicação do estudo 
-\input{../5proposta/4outras_ferramentas} %Seção 3.4 - Formas de utilização de outras ferramentas no trabalho (Apache SparkStreaming, Apache Kafka-Mosca)
-\input{../5proposta/5metodo_agricola} %Seção 3.5 - Método agrícola utilizado para aplicação no trabalho (micro-aspersão)
+\input{../5proposta/1arquiteturaProposta} %Seção 3.1 - Arqtuitetura proposta para dar solução ao problema 
+\input{../5proposta/2modeloConhecimento} %Seção 3.2 - Modelo de dados utilizado no trabalho para definição do conhecimento
+\input{../5proposta/3VirtualObjects} %Seção 3.3 - definição de Virtual Objects
+\input{../5proposta/4Mobilidade} %Seção 3.4 - Implementação de mobilidade de dispositivos IoT
 
 %% Parte de conclusão
 
-\input{../9conclusao/0resultados_esperados/0resultados_esperados} %Cap 4 - Resultados Esperados e Implementação
-\input{../9conclusao/0resultados_esperados/1servicos} %Seção 4.1 - Definição
-
-\input{../9conclusao/9conclusao/0conclusao} %Cap 5 -Conclusão
-\input{../9conclusao/9conclusao/1principais_contribuicoes}  %Seção 5.2 - Principais Contribuições
-\input{../9conclusao/9conclusao/2trabalhos_futuros} %Seção 5.3 - Trabalhos Futuros
-\input{../9conclusao/9conclusao/3consideracoes_finais}  %Seção 5.4 - Considerações Finais
+%\input{../9conclusao/9conclusao/0conclusao} %Cap 5 -Conclusão
+%\input{../9conclusao/9conclusao/1principais_contribuicoes}  %Seção 5.2 - Principais Contribuições
+%\input{../9conclusao/9conclusao/2trabalhos_futuros} %Seção 5.3 - Trabalhos Futuros
+%\input{../9conclusao/9conclusao/3consideracoes_finais}  %Seção 5.4 - Considerações Finais
 
 
 \bibliography{../../references/central-bibliography} % bibname=nome do seu arquivo BibTeX

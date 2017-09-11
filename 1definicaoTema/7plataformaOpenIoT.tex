@@ -1,0 +1,144 @@
+\chapter{Plataforma OpenIoT}
+%\section{}
+\acronym{SSN}{Semantic Sensor Networks}
+\acronym{LSM}{Linked Sensed Middleware}
+\acronym{RDF}{Resource Description Framework}
+\acronym{IERC}{European Research Cluster on the Internet of Things}
+
+%The Schema Editor of OpenIoT for Semantic Sensor Networks
+\cite{2016arXiv160606434J}
+
+OpenIoT é uma implementação de código aberto da arquitetura de referência IERC que surgiu a partir do projeto OpenIoT\cite{Soldatos2015} sendo uma das plataformas pioneiras em IoT a propiciar uma interoperabilidade semântica entre diferentes serviços de IoT na nuvem. Tendo papel fundamental no seu processo operacional, a ontologia SSN da W3C fornece um modelo genérico e baseado em padrões para criar representações virtuais de sensores físicos.
+
+Sua arquitetura é composta por sete elementos principais, que pertencem a três camadas lógicas diferentes, conforme ilustrado na figura \ref{fig:openiotgeneral}.
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/openIoTlight}
+	\caption{Arquitetura OpenIoT}
+	\label{fig:openIoTlight}
+\end{figure}
+
+Suas três camadas lógicas são:
+
+\section{Aplicação} Camada responsável pelas especificações on-the-fly de solicitações de serviço para a plataforma OpenIoT, fornecendo uma interface Web 2.0. Compreende um conjunto de serviços para especificar e formular tais solicitações, além de enviá-los ao Agendador Global. Dentre os componentes utilizados por esta camada estão:
+\paragraph{Definições} Permite a especificação on-the-fly de solicitações de serviço dentro da plataforma OpenIoT através de uma interface Web. Compreende um conjunto de serviços para especificar e formular tais solicitações, além de enviá-los ao módulo Scheduler.
+\paragraph{Apresentação} Seleciona os applets apropriados para facilitar a apresentação dos resultados das solicitações. Para visualizar essas solicitações, este componente se conecta diretamente ao módulo de Serviços de entrega para recuperar os dados relevantes.
+\paragraph{Configuração e Monitoramento} Permite a gestão, configuração e monitoramento das funcionalidades da plataforma OpenIoT.
+
+\section{Virtualização}
+\subsection{Scheduler} Elemento da plataforma responsável por elaborar as solicitações baseadas nas informações enviadas pelo usuário (definição da solicitação), analisando cada requisição e atuando como ponto de interação com o resto da plataforma através de um banco de dados na nuvem. Possui as seguintes funcionalidades:
+
+\paragraph{Seleção de Sensores e Wrappers} Efetua consultas ao Service Discovery (baseado em propriedades semânticas dos sensores) através da entidade ?availableSensors? para encontrar um conjunto de sensores (físicos ou virtuais) e ICO/Wrappers que cumprem os critérios especificados na solicitação. Como resultado da consulta	recebe uma lista de sensores (com seus identificadores únicos) que são utilizados na entrega do serviço especificado (ou seja, uma lista de sensores que cumprem critérios definidos como parte da solicitação de serviço).
+\paragraph{Ativação "indireta" Sensores Virtuais} Após a identificação dos Sensores/Wrappers que atendem aos critérios especificados, os nós GSN (sensores virtuais) são informados sobre qual deles é utilizado pelo serviço agendado. Procedimento aplicado no horário que o pedido será executado, mantendo essas informações na entidade "sensorServiceRelation" que é acessadas pelos sensores virtuais para atualização.
+\paragraph{Armazenamento e execução de solicitações} Ele	é responsável por identificar as informações sobre os serviços relacionados a uma solicitação específica a serem entregues ao Gerenciador de Entregas/Apps. Esse procedimento é realizado através das informações armazenadas na entidade "serviceDeliveryDescription".
+\paragraph{Controle do estado das solicitações} Com base nos ciclos de vida dos serviços, o Scheduler atualiza o estado das solicitações na entidade "serviceStatus", utilizada quando necessário para informar ao usuário o estado de sua requisição.
+\paragraph{Controle de acesso} Por fim, ele é responsável pelos diversos mecanismos de controle do acesso às entidades da plataforma com a ajuda de uma entidade chamada "user"
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/Architecture_DataAndRelationsWithoutStoringFormat}
+	\caption{Arquitetura OpenIoT}
+	\label{fig:Architecture_DataAndRelationsWithoutStoringFormat}
+\end{figure}
+
+A Figura seguinte ilustra o ciclo de vida dos serviços IoT dentro da plataforma OpenIoT. As transições entre os diferentes estados ocorrem com base nas requisições feitas às APIs do Scheduler.
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/SchedulerServicesStateDiagram}
+	\caption{Arquitetura OpenIoT}
+	\label{fig:SchedulerServicesStateDiagram}
+\end{figure}
+
+
+
+\subsection{Serviços de entrega e gestão de aplicativos}
+Esse elemento possui uma dupla funcionalidade. Por um lado (gestor de serviços de entrega), permite a recuperação de dados dos sensores que compõem a solicitação e num segundo momento (gestão de aplicativos), mantém e recupera estruturas de informações sobre a utilização de serviços, dando suporte à processos de medição, cobrança e gerenciamento de recursos. Portanto, seu papel é fornecer meios para:
+
+\begin{itemize}
+	\item Executar os serviços solicitados, devolvendo seus resultados;
+	\item Acessar e processar fluxos de dados oriundos da LSM;
+	\item Considerar as instruções de processamento definidas durante o processo de formulação do pedido (Schedule);
+	\item Acompanhar parâmetros de referência associados aos serviços em execução (ex:Tempo que um serviço é utilizado, Volume de dados transmitidos, Número e tipo dos sensores utilizados); 
+	\item Gerenciar e manter os registros desses parâmetros de referência;
+	\item Executar rotinas e gerar relatórios de faturamento e cobrança com base nos recursos utilizados e parâmetros de referência.
+\end{itemize}
+
+\subsection{Plataforma de relacionamento dos dados - LSM-Light} \cite{DBLP:conf/ficloud/QanbariBRD15} No tratamento do processamento e fornecimento dos dados oriundos de sensores conectados na rede, o OpenIoT utiliza um middleware central chamado de Linked Sensor Middleware responsável pela identificação de todos os sensores definidos em sua base, facilitando o processo de coleta dos dados e garantindo ao mesmo tempo a sua própria anotação semântica. Ele possui as seguintes atribuições dentro da plataforma:
+
+\begin{itemize}
+	\item Suas fontes de dados de entrada são sensores virtuais;
+	\item Transforma os dados provenientes dos sensores virtuais em uma representação de dados vinculados (RDF), que são anotados de acordo com as ontologias suportadas;
+	\item Importa ou transmite dados utilizando 2 tipos de abordagens: pull e push;
+\end{itemize}
+
+Na abordagem Pull, a pesquisa é feita periodicamente na fonte dos dados através de canais semelhantes a feeds de dados. Por outro lado, ao utilizar a abordagem Push, a fonte dos dados que passam a ser responsáveis pelo envio dos dados à plataforma. A plataforma OpenIoT da suporte à ambas abordagens, utilizadas dependendo do caso de uso real, cada abordagem possui diferentes vantagens e desvantagens descritas pelo seguinte trabalho \cite{PUBSUB}.
+
+\section{Física}
+
+\subsection{Middleware de controle de sensores (XGSN)} Um middleware de extensão da plataforma que lida com o ciclo de vida dos sensores virtuais ou dispositivos físicos, coletando, filtrando, combinando e aplicando anotações semânticas no fluxo de dados produzidos por eles. Em outras palavras, ele funciona como um hub entre o mundo virtual e o físico. Seu funcionamento é baseado em instâncias distribuídas que pertencem a diferentes entidades administrativas. 
+
+%\subsection{Gestão de Sensores Móveis}
+
+\subsection{Controle dinâmico de Sensores}Para criar um ambiente de IoT universalizado, precisa existir um forte compartilhamento e gestão de recursos dentro da rede de sensores. Na plataforma OpenIoT, o módulo X-GSN foi extendido de forma a poder identificar dinâmicamente os sensores que estão atualmente ativos dentro da plataforma. Essa extensão cria uma nova funcionalidade que faz buscas periódicas ao LSM-Light analisando quais sensores continuam ativos, ativando/desativando dentro do módulo X-GSN os sensores virtuais relevantes.
+
+O diagrama UML abaixo descreve as classes que compõem esta extensão de controle dinâmico dos sensores. 
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/dsc-uml}
+	\caption{Arquitetura OpenIoT}
+	\label{fig:dsc-uml}
+\end{figure}
+
+A interface Parser em conjunto com a classe SensorParse são responsáveis pela análise dos metadados RDF utilizando o LSM-Light e pela extração de identificadores dos sensores virtuais, enquanto que a classe DynamicControlTask encapsula as operações de ativação/desativação dos sensores virtuais. Utilizando o SparqlClient incluído neste módulo, as consultas SPARQL podem ser executadas, obtendo como resultado os identificadores dos sensores virtuais que serão ativados ou desativados.
+
+%\subsection{Aspectos de segurança}
+
+\section{Principais objetos na plataforma OpenIoT}
+
+\subsection{OSDSpec} Esquema para especificação de descritores das solicitações
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/OSDSpec_Schema_graph}
+	\caption{Esquema de um Descritor de serviço}
+	\label{fig:OSDSpec_Schema_graph}
+\end{figure}
+
+\subsection{OSMO} Esquema com a definição dos objetos utilizados em sensores
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/OSMO_Schema_Graph}
+	\caption{Esquema de um Sensor (o esquema OSMO está incluso no OSDSpec) }
+	\label{fig:OSMO_Schema_Graph}
+\end{figure}
+
+\subsection{SensorTypes} Esquema para definir o tipo de sensor utilizado
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/SensorTypes_Schema_graph}
+	\caption{Esquema de um tipo de sensor}
+	\label{fig:SensorTypes_Schema_graph}
+\end{figure}
+
+\subsection{DescriptiveIDs} Esquema de identificação de recursos dentro da plataforma
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/DescriptiveIDs_Schema_graph}
+	\caption{Esquema de um identificador}
+	\label{fig:DescriptiveIDs_Schema_graph}
+\end{figure}
+
+\subsection{SdumServiceResultSet} Esquema de Result Set utilizado para retorno das solicitações
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/SdumServiceResultSet_Schema_graph}
+	\caption{Esquema de um identificador}
+	\label{fig:SdumServiceResultSet_Schema_graph}
+\end{figure}

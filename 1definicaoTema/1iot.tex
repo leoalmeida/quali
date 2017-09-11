@@ -1,0 +1,36 @@
+\chapter{IoT e Semântica}
+%\cite{cite1}  International Data Corporation (IDC) Corporate USA, ?Worldwide smart connected device tracker? Setembro 2017, http://www.idc.com/getdoc.jsp?containerId=prUS23398412 [Accessed on: 2017-09-01].
+Este capítulo apresenta uma visão geral sobre os conceitos em torno da criação de uma Internet das Coisas semântica, seu funcionamento e seus principais modelos, arquiteturas e plataformas existentes e descritos a partir de diferentes trabalhos acadêmicos.
+
+\section{Internet das Coisas (IoT)}
+
+Em nosso dia-a-dia, podemos perceber os diversos indícios de como a Internet das Coisas (IoT) irá conectar os bilhões de sensores previstos para serem implantados ao redor do mundo até 2020 segundo previsões do IDC\cite{cite1}. Voltando ao final do século passado, Weiser já previa em suas publicações, como seriam as principais transformações do conceito de computador pessoal ~\cite{Weiser1999} que viria a compor um novo conceito cunhado de "Computação Ubíqua" ~\cite{Weiser1991} ~\cite{Weiser1993} que com o desenvolvimento e ganho de popularidade deu origem à Internet das Coisas como conhecemos nos dias atuais. 
+
+Durante as últimas décadas houve uma enorme popularização da internet, evoluindo as tecnologias de comunicação sem fio, massificando a utilização de dispositivos móveis conectados e viabilizando o crescimento das redes sociais. Essa realidade tem permitido que as pessoas possam se comunicar ou realizar grande parte das tarefas do dia-a-dia a qualquer momento, de qualquer lugar, sem muitos problemas, apenas estando conectarndo na internet.
+
+O conceito de Internet das Coisas propõe a criação de um ecossistema de "coisas" interconectadas entre si. Se entende por "coisa", objetos geralmente compostos por pequenos sistemas computacionais embarcados que contam com a habilidade de captar dados do ambiente analisado trocando informação com outras "coisas" de forma direta ou através de uma rede de interconexão (ex: internet). 
+
+Sua principal característica, que acaba inviabilizando uma implantação universal da Internet das Coisas nos dias atuais, é quanto a forma de busca e comunicação entre os diversos dispositivos ubíquos disponíveis na rede, que deve ser baseado em um identificador único dentro na rede (ex: Seu IP) ou seja, cada "coisa" conectada à rede terá que possuir seu identificador próprio. Porém, enquanto a migração do protocolo IPv4 para o IPv6 não se concretizar, será econômicamente inviável implementar um ecossistema novo para a Internet das Coisas que seja amplamente universal. Fora isso, como essa característica não é a única, e novas tecnologias continuam sendo pesquisadas e lançadas no mercado, nada impede que sejam feitas adaptações nas redes existentes para alcançar implementações baseadas na Internet das Coisas. A mais promissora delas é a "Web das Coisas" cujo ecossistema é baseado em protocolos da Web existentes e que já estão consolidados, como detalhado no próximo item.
+
+
+%%\subsection{Arquiteturas para IoT}
+%%\cite{DEFARIAS2017128}
+
+
+\section{Redes de Sensores Sem Fio}
+
+A queda crescente dos custos de equipamentos eletrônicos e a redução no tamanho dos dispositivos simplificaram a sua mobilidade, fazendo com que as redes sem fio ganhassem rapida popularidade mundo afora, ganhando novos tipos de aplicações com objetivo de simplificar o dia-a-dia das pessoas, como previsto por Weiser em \cite{Weiser1991}. 
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/visaofisica}
+	\caption{Visão física de uma rede de sensores}
+	\label{fig:gsn}
+\end{figure}
+
+Atualmente, tem cresido de forma exponencial a variedade de sensores\cite{thomazinisensores} existentes e que podem ser obtidos sem muita dificuldade pela internet, onde junto à uma maior consciêntização das pessoas quanto aos benefícios que a interligação desses dispositivos em rede para análise em tempo real de informações ambientais do dia-a-dia, que geralmente são invisíveis a nossa atenção \cite{Weiser:1997:CAC:504928.504934}, faz da rede de sensores sem fio um dos pilares de sustentação da Internet das Coisas (IoT).
+
+Segundo Akyildiz em \cite{akyildiz2002survey}, uma rede de sensores se diferencia de outras redes por ser composta de uma grande volume de nós sensores, que se encontram dentro do fenômeno natural analisado ou muito próximo a eles. Por isso, decisões sobre a arquitetura, modelo e equipamentos utilizados em uma Redes de Sensores Sem Fio \cite{LECKER2010} (RSSF ou WSN) se tornaram fator de sucesso em projetos de IoT.
+
+Em uma pesquisa descrita em \cite{Silva2009}, com base em diferentes trabalhos já publicados anteriormente, Silva apresenta uma revisão das diversas possibilidades de aplicações das redes RSSF no contexto da agricultura de precisão onde esses trabalhos são delineados e caracterizados, possibilitando o uso das informações detalhadas em seu trabalho como dimensões do projeto proposto por este estudo.
+

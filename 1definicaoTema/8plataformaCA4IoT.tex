@@ -1,0 +1,140 @@
+\chapter{Arquitetura CA4IoT}
+%http://ieeexplore.ieee.org/document/6605518/
+%\cite{cite1}http://www.sciencedirect.com/science/article/pii/S0950705116302015
+%\cite{cite2}http://ieeexplore.ieee.org/document/6468408/citations?anchor=anchor-paper-citations-ieee&ctx=citations
+%\cite{cite3}http://ieeexplore.ieee.org/document/7983223/
+%\cite{cite4}http://ieeexplore.ieee.org/document/6569153/
+% Os seguintes termos: objetos, coisas, objetos inteligentes, dispositivos e nós; foram utilizados neste trabalho com o mesmo propósito, já que assim são utilizados na literatura relacionada à IoT. 
+
+Em \cite{2013arXiv1301.1084P}, Perera propõe uma arquitetura orientada por contextos com objetivo principal de abstrair pro usuários as complexidades técnicas existentes nas plataformas de IoT, automatizando as tarefas de seleção dos sensores avaliados de acordo com os problemas e tarefas definidas pelos usuários. Essa plataforma se diferencia das outras existentes pelo fato de utilizar regras semânticas na identificação dos recursos que serão avaliados pela plataforma, enquanto as outras possuiam como foco principal catalogar sensores físicos, fazendo a seleção dos recursos por seus identificadores ou alguns de seus atributos.
+
+Seu trabalho identifica os principais pontos necessários ao desenvolvimento de uma plataforma para IoT disponibilizando em forma de serviços os sensores virtuais controlados pela plataforma. Esses dispositivos virtuais são compostos pelo processamento dos dados coletados de um ou mais sensores diferentes que a partir de um fluxo de dados (streams) utilizam os diversos mecanismos de filtragem, associação e lógica disponibilizados pela plataforma para definir sua semântica.
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/conception}
+	\caption{ Concepção da arquitetura dividida em 3 partes }
+	\label{fig:conception}
+\end{figure}
+
+Sua proposta de arquitetura foi concebida em 3 partes [figura \ref{fig:Conception}] que define as capacidades funcionais necessárias para uma plataforma desse tipo, a divisão da arquitetura em camadas de alto nível e por fim a definição dos diversos módulos necessários para a implantação da arquitetura como um todo. A seguir será apresentado uma breve descrição da proposta realizada, suas diversas camadas e os elementos e componentes que fazem parte da solução. 
+
+\subsection{Capacidades funcionais da plataforma}
+Com as capacidades funcionais descritas nesta seção, à plataforma podem obter o resultado solicitado a partir de três etapas, onde inicialmente o usuário descreve suas necessidades através de uma interface amigável, a plataforma avalia semânticamente o problema do usuário selecionando os sensores apropriados e por fim, os dados dos sensores selecionados são recuperados, combinados e enviados ao usuáriou tilizando um stream de dados único. A fim de projetar a arquitetura proposta, Pereira inicialmente identificou os seguintes requisitos funcionais da solução:
+
+\paragraph{Conectar sensores ao middleware IoT facilmente} Esta é uma funcionalidade importante em que se espera que bilhões de sensores estejam conectados às soluções de middleware IoT. Devido à escala, não é possível conectar sensores manualmente por pessoas técnicas. Nós demonstramos como os sensores de conexão podem ser automatizados em [13]. Além disso, IEEE 1451 [14] e SensorML [15] permitem tornar o processo de automação mais sofisticado.
+
+\paragraph{Entender e manter informações de contexto} As informações de contexto sobre sensores precisam ser adquiridas e armazenadas com anotações apropriadas que facilitam a sua recuperação mais tarde. Informações atualizadas, como recursos do sensor, localização, taxa de amostragem, sensores próximos, duração da bateria, etc. precisam ser mantidas. Este conhecimento é necessário para selecionar sensores apropriados com base no pedido dos usuários.
+
+\paragraph{Extrair informações de contexto de alto nível} CA4IOT precisa raciocinar e entender a solicitação do usuário. Por exemplo, como explicado na Figura 3, o CA4IOT deve ser capaz de entender a relação entre poluição ambiental e sensores de baixo nível, como sensores de temperatura e sensores de pH. Isso pode ser conseguido mantendo o conhecimento sobre domínios de aplicativos usando bases de conhecimento. Além disso, essas bases de conhecimento devem ser capazes de se estender facilmente através do plugin de bases de conhecimento adicionais que contenham conhecimento sobre diferentes domínios de aplicação quando necessário.
+
+\paragraph{Entender o problema do usuário} O raciocínio (por exemplo, semântico ou estatístico) é essencial para entender a relação entre os requisitos dos usuários de alto nível e as capacidades dos sensores de baixo nível, como explicado na Figura 3. É necessário um raciocínio adicional para identificar informações de contexto relevantes com base em leitura de sensores e também para gerar novos conhecimentos (por exemplo, ler as coordenadas de localização GPS de dois sensores e decidir se estão nas proximidades).
+
+\paragraph{Preencher a lacuna entre usuário e sensores} Existem muitas operações que podem ser aplicadas aos dados do sensor. Uma operação pode ser tão simples quanto a média ou tão complexa quanto a combinação de várias leituras de sensores e calcular uma única leitura ou gerar valores em falta, avaliando os dados históricos dos sensores. Principalmente, as operações de fusão de dados são usadas para gerar novos conhecimentos de contexto.
+
+\paragraph{Gerenciar usuários} Trata-se de adquirir, raciocinar e armazenar informações do usuário. Quando os usuários fazem solicitações, o CA4IOT precisa acompanhá-los em termos dos requisitos, formato de saída necessário, restrições adicionais, como taxa de amostragem, volume de dados e assim por diante. Além disso, o CA4IOT precisa fornecer um mecanismo para interagir com os usuários que permitirão definir seus requisitos com facilidade.
+
+
+\subsection{Divisão em Camadas}
+Sua proposta de arquitetura consiste na divisão em quatro camadas que fazem parte do núcleo da plataforma e duas camadas adicionais definidas para controle da interação entre o núcleo da plataforma e o mundo exterior.
+
+\paragraph{Camada de usuário} Esta camada não faz parte da camada central. Os usuários podem ser usuários, aplicativos ou serviços humanos. User Oriented Front End (UOFE) é uma parte desta camada e, portanto, não é um componente central na arquitetura CA4IOT.
+
+
+\paragraph{Dados, semântica e definiçao de contextos} Responsável pela gerenciar usuários. Os componentes pertencem a esta camada são dispatcher de dados, gerente de solicitação e publique / inscreva-se.
+
+\paragraph{Lógica e processamento de dados} Essa é a camada mais importante no CA4IOT. É responsável pelo processamento de dados, raciocínio, fusão, geração de conhecimento e armazenamento. Os componentes pertencem a esta camada são registro de contexto, base de conhecimento de contexto, mecanismo de raciocínio, contexto e gerador de descoberta semântica, processo de contexto primário, processador de contexto secundário, registro de provedor de contexto, operador de fusão de dados e repositório de fusão de dados.
+
+\paragraph{Descoberta de semântica e contextos} Esta camada é responsável pelo gerenciamento de contextos e descobridores semânticos, que inclui gerar, configurar e armazenar. Os componentes pertencem a esta camada são descobridores de contexto e semântico, gerador de contexto e descobridor semântico e repositório de descoberta de contexto e semântico.
+
+\paragraph{Aquisição dos dados de sensores} Esta camada é responsável pela aquisição de dados. Esta camada aparece na maioria das soluções de middleware IoT, de rede de sensores e de gerenciamento de contexto com terminologias diferentes, como wrappers, gateways, manipuladores, proxies, mediadores, etc. Esta camada se comunica com sensores de hardware e software e recupera os dados do sensor no CA4IOT. Os componentes que pertencem a esta camada são wrappers de sensores, repositório de wrapper, gerador de wrapper, repositório local de definição de dispositivo de sensor (SDD) e repositório de nuvem SDD.
+
+\paragraph{Camada de detecção} Esta camada representa todos os sensores de software e hardware (físicos e virtuais). Além disso, esta camada não faz parte da arquitetura principal do CA4IOT.
+
+\subsection{Componentes e Elementos da arquitetura}
+
+Descendo mais um nível dentro da arquitetura proposta, Pereira separou as 6 camadas em uma série de componentes e elementos, definindo a responsabilidade de cada um deles dentro da estrutura. 
+
+In Section IV, we introduced all the components under each layer.
+
+ We have labelled each component (e.g. C1, C2). However, numbering does not reflect the execution or interaction order. Further, there are some other elements that do not belong to CA4IOT architecture but essential to be explained as they are evolve in execution process. These elements are also labelled (e.g. E1, E2).
+ 
+ \begin{figure}[tbh!]
+ 	\centering
+ 	\includegraphics[width=1.0\textwidth]{../images/CA4IOT-component-level-architecture}
+ 	\caption{Arquitetura CA4IOT em nível de componentes}
+ 	\label{fig:CA4IOT}
+ \end{figure}
+
+\paragraph{Componentes}
+
+
+\subsection{Middleware CASCoM}
+%introduction
+Em /cite{CASCoM}, Perera propõe um modelo de composição de sensores baseado em contexto com a finalidade de simplificar o processo de configuração de sensores com a aplicação de mecanismos de filtragem, associações e lógica nas plataformas de IoT com a incorporação de tecnologias de semântica para solução dos desafios propostos.
+Para isso, ele separa as configurações necessárias ao paradigma de IoT em 2 grandes categorias: configurações em nível de sensores e em nível de sistema. Sendo a primeira categoria focada no controle do comportamento dos sensores e a última na configuração dos parâmetros de software relacionados à atividade dos sensores como: escalonamento de leituras, taxa de amostragem, frequência de comunicação de dados, padrões de comunicação utilizados e protocolos.
+
+De forma mais especifica, o modelo identifica, detalha suas composições e configura a atuação dos sensores e o processamento dos dados coletados de acordo com os objetivos dos usuários.
+Este modelo difere em relação ao proposto no modelo GSN ....
+
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/cascom1}
+	\caption{Arquitetura CA4IOT}
+	\label{fig:CASCOM1}
+\end{figure}
+
+
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/cascom2}
+	\caption{Arquitetura CA4IOT}
+	\label{fig:CASCOM2}
+\end{figure}
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/cascom3}
+	\caption{Arquitetura CA4IOT}
+	\label{fig:CASCOM3}
+\end{figure}
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/cascom4}
+	\caption{Arquitetura CA4IOT}
+	\label{fig:CASCOM4}
+\end{figure}
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/cascomModel}
+	\caption{Arquitetura CA4IOT}
+	\label{fig:cascomModel}
+\end{figure}
+
+No middleware IoT existente (por exemplo, GSN), muitos arquivos de configuração e códigos de programação precisam ser definidos manualmente pelos usuários (sem qualquer ajuda da GSN). Um modelo ideal de configuração do middleware IoT deve abordar todos os desafios acima mencionados. O modelo de configuração que propomos neste artigo é aplicável a vários outros paradigmas emergentes, como a detecção como serviço [4].
+
+%model
+
+Seu modelo de solução, foi dividido nas 6 fases seguintes: Understand User Requirements; Select Data Processing Components; Select Sensors; Provide advice and Recommendations; Discover Additional Context; Context-based Cost Optimization.A saída do processo são as aplicações dos dados coletados atendendo às necessárias do usuário como demonstrado pela figura X abaixo.
+
+%SSN - w3.org/2005/Incubator/ssn/wiki/SSN
+
+Para criar a semântica de seu modelo, Perera utilizou a essência de 3 diferentes ontologias (QA-TDO, SCO e SSN) para descrição dos diferentes tipos de sensores, componentes de software e domínios de conhecimento.
+
+Na fase 1, os usuários são facilitados com uma interface de usuário gráfica, baseada em uma abordagem de pergunta-resposta (QA), que permite expressar os requisitos do usuário. Os usuários podem responder a todas as questões possíveis. O CASCoM procura e filtra as tarefas que o usuário pode querer executar. Na lista filtrada, os usuários podem selecionar a tarefa desejada. Os detalhes da abordagem de QA são apresentados posteriormente nesta seção. Na fase 2, a CASCoM procura diferentes componentes de programação que permitem gerar o fluxo de dados necessário. Na fase 3, a CASCoM tenta encontrar os sensores que podem ser usados ??para produzir as entradas exigidas pelos componentes de processamento de dados selecionados. Se o CASCoM não produzir os fluxos de dados exigidos pelos usuários devido a recursos insuficientes (ou seja, a indisponibilidade dos sensores), ele fornecerá conselhos e recomendações sobre implementações futuras de sensores na fase 4. A Fase 5 permite aos usuários capturar informações de contexto adicionais. A informação de contexto adicional que pode ser derivada usando os recursos e conhecimentos disponíveis está listada para ser selecionada. Na fase 6, os usuários recebem uma ou mais soluções3. CASCoM calcula os custos de cada solução ao usar a técnica em 2 [2]. Por padrão, o CASCoM selecionará a solução com o menor custo. No entanto, os usuários podem selecionar os modelos de custo conforme necessário. Finalmente, o CASCoM gera todos os arquivos de configuração e códigos de programa listados na Figura 2 (a). Os dados começam a ser transmitidos logo após.
+
+%Evaluation, Discussion and Lessons Learned
+
+Resultados: A Figura 5 (a) mostra que o CASCoM permite reduzir consideravelmente o tempo necessário para a configuração do mecanismo de processamento de dados no middleware IoT. Especificamente, CASCoM permitiu que os três tipos de usuários completasse a tarefa dada 50, 80 e 250 vezes mais rápido (respectivamente) em comparação com a abordagem existente. De acordo com a Figura 5 (b), a abordagem de reflexão Java leva um pouco mais de tempo especialmente ao inicializar. Embora a abordagem de reflexão Java possa adicionar mais flexibilidade ao nosso modelo, a sobrecarga adicional aumenta quando o número de componentes e operação envolvidos aumenta. Os custos gerais podem crescer até um nível inaceitável de forma muito rápida quando o GSN aumenta (por exemplo, mais pedidos de usuários).
+
+De acordo com a Figura 5 (c), mesmo os especialistas em TI que conhecem o GSN podem economizar tempo usando CASCoM até 88 \%. Especialmente, o tempo necessário para definir a classe VSD e VS foi significativamente reduzido. Ambos os arquivos podem ser gerados pelo CASCoM de forma autônoma em um segundo, mesmo para cenários complexos. No entanto, o tempo necessário para encontrar componentes e sensores de processamento de dados (e wrappers) depende do tamanho do modelo de dados semânticos. A Figura 5 (d) mostra como o tempo de processamento total variaria dependendo do tamanho do modelo de dados semânticos. Aproximadamente, um modelo semântico com 10.000 descrições de sensores e 10.000 componentes de processamento de dados pode ser processado para encontrar soluções para um determinado pedido de usuário em menos de um minuto. No entanto, a maior parte do tempo é tomada para ler o modelo de dados.
+
+O processo de configuração real além da leitura do modelo de dados leva apenas 4 segundos e ele aumenta ligeiramente quando o tamanho do modelo aumenta. 
+
+%Conclusion
+
+Mostramos que é possível oferecer um modelo de configuração sofisticado para suportar especialistas que não sejam de TI. As tecnologias semânticas são amplamente utilizadas para suportar este modelo. Usando nossa implementação de prova de conceito, os especialistas em TI e não-TI conseguiram configurar o GSN em muito menos tempo. No futuro, planejamos ampliar nosso modelo de configuração em nível de sensor. Para conseguir isso, desenvolveremos um modelo que pode ser usado para configurar sensores de forma autônoma sem intervenção humana em ambientes inteligentes altamente dinâmicos no paradigma IoT.

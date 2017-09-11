@@ -1,0 +1,58 @@
+\chapter{Arquitetura GSN}
+
+\cite{LSIR-REPORT-2006-001}
+
+\acronym{EPFL}{École Polytechnique Fédérale de Lausanne}
+A Global Sensor Networks (GSN) é um projeto iniciado pela EPFL em 2004 e cujo objetivo principal é o desenvolvimento de uma plataforma aberta e genérica para implementar redes de sensores e cujo processamento dos dados gerados por seus sensores é feita de maneira distribuída. Sua criação foi baseada no estudo dos requisitos encontrados nas plataformas desenvolvidas para sustentação de redes de sensores, que possuem grande semelhança entre si. Essa plataforma fornece infra-estrutura escalável para integrar diferentes tecnologias de sensores usando um pequeno conjunto de abstrações definidas, suporte a integração e descoberta de novas redes de sensores, consultas distribuídas, filtragem e combinação dos dados coletados de sensores. Durante sua operação, processos de configurações e adaptatividade dinâmica são feitas através de uma linguagem declarativa baseada em XML.
+
+O middleware GSN possui um mecanismo agnóstico de protocolos extensível para adquirir dados de dispositivos sensores, usando wrappers configuráveis e implementando alguns desses protocolos.
+
+
+\section{Objetos Virtuais}
+
+
+\section{Processamentos dos streams de dados}
+
+\section{Arquitetura e Implementação}
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/gsn-architecture-new}
+	\caption{Visão orientada aos serviços dentro de uma rede de sensores}
+	\label{fig:gsn-architecture-new}
+\end{figure}
+
+\section{Middleware de Extensão XGSN}
+Solução de middleware Open-Source descrito em \cite{DBLP:conf/semweb/CalbimonteSEA14} que lida com o ciclo de vida de sensores virtuais (dispositivos, objetos ou pessoas que observam propriedades em torno deles), fornecendo anotações semânticas para eles e os dados de observação que eles produzem. A idéia-chave é fornecer uma plataforma habilitada semânticamente de ponta a ponta para o gerenciamento de dados IoT, na qual o XGSN desempenha o papel de um middleware de aquisição de dados totalmente distribuído com recursos de anotação semântica. Descrevemos a arquitetura deste sistema e sua implementação, enfatizando o processamento de dados distribuídos que permite ao XGSN produzir diferentes camadas de observações agregadas. 
+
+Este middleware estende o GSN com a inclusão do conhecimento semântico que pode ser usado e estendido. Ele também pode ser utilizado como extensão para a plataforma OpenIoT abordada anteriormente, integrada ao Linked Sensor Middleware (LSM) \cite{Le-Phuoc} ou ser conectada a qualquer outra plataforma com armazenamento de dados habilitado para uso RDF.
+
+%Le-Phuoc, D., Nguyen-Mau, H.Q., Parreira, J.X., Hauswirth, M.: A middleware framework for scalable management of linked streams. Web Semantics: Science, Services and Agents on the World Wide Web 16, 42?51 (2012)
+
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/xgsn}
+	\caption{Arquitetura alto nível GSN}
+	\label{fig:xgsnhighlevel}
+\end{figure}
+
+\paragraph{Abordagem geral} Essa semântica explícita para representação virtual de um sensor facilita as tarefas de descoberta e pesquisa dentro de um ambiente de IoT. 
+
+Também para observações reais, o XGSN pode fornecer diferentes níveis de anotações semânticas, dependendo do tipo de sensor virtual exposto. 
+
+Por exemplo, em um cenário de qualidade do ar, o XGSN pode anotar cada medida feita por um sensor (incluindo valor, unidade, tipo de dados, etc.) como uma observação de uma propriedade (por exemplo, NO2), conforme descrito na Figura 2. 
+
+No entanto, para alguns casos de uso de anotações de baixo nível não são úteis ou relevantes, portanto, o XGSN pode agregar, filtrar ou processar várias observações ao longo do tempo ou espaço. Isso produzirá indicadores em um sensor virtual de nível superior, cada um dos quais pode ser anotado com conceitos de nível superior de uma ontologia de domínio (por exemplo, uma observação de "baixa qualidade do ar"). Além disso, as correlações ainda mais complexas e o processamento, incluindo fontes de dados externas ou dados de outras instâncias do XGSN, podem levar a anotações que denotam conceitos passíveis de ação e humancompreensíveis, como alertas ou atividades.
+
+\paragraph{Aspectos de gerenciamento de ontologia}
+
+
+\paragraph{Arquitetura}
+
+
+\paragraph{Exemplos}
+
+Projetado como uma plataforma altamente extensível aproveitando as capacidades existentes no middleware GSN e baseado em representações semânticas de metadados e observação de sensores para orientação do processo de avaliação e publicação dos dados de sensores na Web, sendo este capaz de lidar com o processo de obtenção dos dados provenientes de um grande número de dispositivos e protocolos diferentes.
+
+Além dos sistemas tradicionais de gerenciamento de sensores, ele é capaz de enriquecer as descrições de sensores virtuais com conteúdo semanticamente anotado usando vocabulários padrão. Na abordagem proposta, os dados e observações dos sensores são anotados usando uma rede de ontologia baseada na ontologia do SSN, fornecendo uma representação padronizada e consultiva que facilita o compartilhamento, a descoberta, a integração e a interpretação dos dados. O XGSN gerencia o processo de anotação para as observações do sensor de entrada, produzindo fluxos RDF que são enviados para o Middleware do Sensor Vinculado habilitado para a nuvem, que pode armazenar os dados internamente ou executar o processamento contínuo de consultas. A natureza distribuída do XGSN permite a implantação de diferentes instâncias remotas que podem trocar dados de observação, de modo que os sensores virtuais possam ser agregados e consumir dados de outros sensores virtuais remotos. Neste artigo, mostramos como essa abordagem foi implementada no XGSN e foi incorporada à plataforma OpenIoT mais ampla, fornecendo um sistema altamente flexível e escalável para gerenciar o ciclo de vida dos dados do sensor, desde a aquisição até a publicação, no contexto da semântica. Web of Things.

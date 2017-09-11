@@ -2,106 +2,83 @@
 \contentsline {part}{\numberline {I}Definições}{}
 \contentsline {chapter}{Cap\'{\i }tulo\ \numberline {1\ --}Objeto da pesquisa}{12}
 \contentsline {section}{\numberline {1.1}Contextualização}{12}
+\contentsline {paragraph}{Middleware}{13}
+\contentsline {paragraph}{Plataforma}{13}
+\contentsline {paragraph}{Arquitetura}{14}
+\contentsline {paragraph}{Modelo}{14}
+\contentsline {paragraph}{Objetos Virtuais}{14}
 \contentsline {section}{\numberline {1.2}Objetivos}{14}
-\contentsline {section}{\numberline {1.3}Metodologia}{16}
+\contentsline {section}{\numberline {1.3}Metodologia}{15}
 \contentsline {section}{\numberline {1.4}Organização do Trabalho}{16}
-\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {2\ --}Internet das Coisas na agricultura}{17}
-\contentsline {section}{\numberline {2.1}Internet das Coisas - IoT}{17}
-\contentsline {subsection}{\numberline {2.1.1}Arquiteturas para IoT}{18}
-\contentsline {section}{\numberline {2.2}Redes de Sensores Sem Fio}{18}
-\contentsline {section}{\numberline {2.3}Agricultura familiar}{19}
-\contentsline {section}{\numberline {2.4}Agroecologia}{20}
-\contentsline {subsection}{\numberline {2.4.1}Suas características}{20}
-\contentsline {section}{\numberline {2.5}Práticas agrícolas}{21}
-\contentsline {section}{\numberline {2.6}agricultura e tecnologia}{22}
-\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {3\ --}Classificação de equipamentos e componentes eletrônicos}{25}
-\contentsline {paragraph}{Componentes passivo ou ativo}{26}
-\contentsline {paragraph}{Componentes de entrada ou saída}{26}
-\contentsline {paragraph}{Componentes analógico ou digital}{26}
-\contentsline {section}{\numberline {3.1}Análise da temperatura}{27}
-\contentsline {subsection}{\numberline {3.1.1}Comparação entre os tipos de sensores de temperatura}{27}
-\contentsline {section}{\numberline {3.2}Análise de iluminação ambiente}{28}
-\contentsline {section}{\numberline {3.3}Análise da Humidade}{29}
-\contentsline {subsection}{\numberline {3.3.1}Ar}{29}
-\contentsline {subsection}{\numberline {3.3.2}Solo}{29}
-\contentsline {section}{\numberline {3.4}Análise de macronutrientes (NPK)}{30}
-\contentsline {section}{\numberline {3.5}Análise da Qualidade da água}{30}
-\contentsline {section}{\numberline {3.6}Análise de Insetos}{30}
-\contentsline {section}{\numberline {3.7}Análise da densidade de elementos}{30}
-\contentsline {section}{\numberline {3.8}Relays eletrônicos}{32}
-\contentsline {subsection}{\numberline {3.8.1}Solenóides}{32}
-\contentsline {section}{\numberline {3.9}Controladores de vazão}{32}
-\contentsline {subsection}{\numberline {3.9.1}O que é vazão?}{32}
-\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {4\ --}Modelos e Arquiteturas}{34}
-\contentsline {section}{\numberline {4.1}Arquiteturas e Modelos em IoT}{34}
-\contentsline {section}{\numberline {4.2}Redes de Sensores Sem Fio}{34}
-\contentsline {section}{\numberline {4.3}Sensores como serviços}{36}
-\contentsline {section}{\numberline {4.4}Identificação dos objetos na rede}{36}
-\contentsline {subsection}{\numberline {4.4.1}Agrupamento de objetos por Federações}{36}
-\contentsline {subsection}{\numberline {4.4.2}Agrupamento de objetos utilizando RNS}{36}
-\contentsline {section}{\numberline {4.5}Sinks e algoritmos de coleta de dados}{36}
-\contentsline {section}{\numberline {4.6}IoT semÃ¢ntico}{36}
-\contentsline {section}{\numberline {4.7}Ontologias em IoT}{37}
-\contentsline {section}{\numberline {4.8}Modelagem dos Dados}{37}
-\contentsline {section}{\numberline {4.9}IoT semÃ¢ntico}{37}
-\contentsline {section}{\numberline {4.10}Ontologias em IoT}{37}
-\contentsline {section}{\numberline {4.11}Modelagem dos Dados}{37}
-\contentsline {section}{\numberline {4.12}Social Virtual Objects}{37}
-\contentsline {section}{\numberline {4.13}Modelo GSN}{37}
-\contentsline {section}{\numberline {4.14}Plataforma ThingSpeak}{37}
-\contentsline {section}{\numberline {4.15}Plataforma Perera}{38}
-\contentsline {section}{\numberline {4.16}Modelo CASCoM}{38}
-\contentsline {section}{\numberline {4.17}Analise do ciclo de vida (ACV)}{40}
-\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {5\ --}Agricultura Familiar}{41}
-\contentsline {section}{\numberline {5.1}Recursos naturais}{41}
-\contentsline {section}{\numberline {5.2}Recursos naturais}{41}
-\contentsline {section}{\numberline {5.3}Modelos agr\'{i}colas relacionados ao trabalho}{41}
-\contentsline {subsection}{\numberline {5.3.1}An\~{a}lise de recursos naturais}{42}
-\contentsline {subsection}{\numberline {5.3.2}Estratégias para armazenamento de recursos naturais}{42}
-\contentsline {subsection}{\numberline {5.3.3}Sistemas de Irriga\c {c}\~{a}o}{42}
-\contentsline {subsection}{\numberline {5.3.4}Sistemas para distribui\c {c}\~{a}o de outros recursos}{42}
-\contentsline {subsection}{\numberline {5.3.5}Irriga\c {c}\~{a}o por micro-asper\c {c}\~{a}o}{42}
-\contentsline {subsection}{\numberline {5.3.6}An\~{a}lise de Insetos}{42}
-\contentsline {subsection}{\numberline {5.3.7}Formas de manipula\c {c}\~{a}o de fertilizantes e defensívos}{42}
-\contentsline {subsection}{\numberline {5.3.8}Identifica\c {c}\~{a}o e An\~{a}lise do meio ambiente}{42}
-\contentsline {section}{\numberline {5.4}Modelos agr\'{i}colas relacionados ao trabalho}{42}
-\contentsline {subsection}{\numberline {5.4.1}An\~{a}lise de recursos naturais}{43}
-\contentsline {subsection}{\numberline {5.4.2}Estratégias para armazenamento de recursos naturais}{43}
-\contentsline {subsection}{\numberline {5.4.3}Sistemas de Irriga\c {c}\~{a}o}{43}
-\contentsline {subsection}{\numberline {5.4.4}Sistemas para distribui\c {c}\~{a}o de outros recursos}{43}
-\contentsline {subsection}{\numberline {5.4.5}Irriga\c {c}\~{a}o por micro-asper\c {c}\~{a}o}{43}
-\contentsline {subsection}{\numberline {5.4.6}An\~{a}lise de Insetos}{43}
-\contentsline {subsection}{\numberline {5.4.7}Formas de manipula\c {c}\~{a}o de fertilizantes e defensívos}{43}
-\contentsline {subsection}{\numberline {5.4.8}Identifica\c {c}\~{a}o e An\~{a}lise do meio ambiente}{43}
-\contentsline {part}{\numberline {II}Desenvolvimento}{44}
-\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {6\ --}Proposta de trabalho}{45}
-\contentsline {section}{\numberline {6.1}Arquitetura Proposta}{45}
-\contentsline {subsection}{\numberline {6.1.1}Descri\c {c}\~{a}o}{45}
-\contentsline {section}{\numberline {6.2}Modelo Utilizado}{45}
-\contentsline {subsection}{\numberline {6.2.1}Modelo de conhecimento}{45}
-\contentsline {subsection}{\numberline {6.2.2}Definição dos Objetos}{45}
-\contentsline {subsection}{\numberline {6.2.3}Estrutura em Grafo}{45}
-\contentsline {subsection}{\numberline {6.2.4}Processamento dos dados}{45}
-\contentsline {subsection}{\numberline {6.2.5}Processamento dos dados}{45}
-\contentsline {paragraph}{Modelo Básico}{45}
-\contentsline {paragraph}{Modelo Estático Complexo}{45}
-\contentsline {paragraph}{Modelo Dinâmico Complexo}{46}
-\contentsline {section}{\numberline {6.3}Ferramenta Desenvolvida}{47}
-\contentsline {section}{\numberline {6.4}Outras Ferramentas}{47}
-\contentsline {section}{\numberline {6.5}Método agropastoril}{47}
-\contentsline {subsection}{\numberline {6.5.1}Coleta e Armazenamento}{47}
-\contentsline {subsubsection}{\numberline {6.5.1.1}água}{47}
-\contentsline {subsubsection}{\numberline {6.5.1.2}Recursos Minerais}{47}
-\contentsline {subsubsection}{\numberline {6.5.1.3}Recursos Químicos}{47}
-\contentsline {subsubsection}{\numberline {6.5.1.4}Outros tipos de recursos}{47}
-\contentsline {subsection}{\numberline {6.5.2}Transporte e aplicação}{47}
-\contentsline {subsection}{\numberline {6.5.3}Definições Básicas}{47}
-\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {7\ --}Resultados Esperados}{50}
-\contentsline {section}{\numberline {7.1}Definicao}{50}
-\contentsline {part}{\numberline {III}Conclusão}{51}
-\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {8\ --}Conclusão}{52}
-\contentsline {section}{\numberline {8.1}Principais Contribui\c {c}\~{o}es}{52}
-\contentsline {section}{\numberline {8.2}Trabalhos Futuros}{53}
-\contentsline {section}{\numberline {8.3}Considera\c {c}\~{o}es finais}{53}
+\contentsline {part}{\numberline {II}Temas Relacionados}{17}
+\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {2\ --}IoT e Semântica}{18}
+\contentsline {section}{\numberline {2.1}Internet das Coisas (IoT)}{18}
+\contentsline {section}{\numberline {2.2}Redes de Sensores Sem Fio}{19}
+\contentsline {section}{\numberline {2.3}IoT semântico}{20}
+\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {3\ --}Arquitetura GSN}{22}
+\contentsline {section}{\numberline {3.1}Objetos Virtuais}{23}
+\contentsline {section}{\numberline {3.2}Processamentos dos streams de dados}{23}
+\contentsline {section}{\numberline {3.3}Arquitetura e Implementação}{23}
+\contentsline {section}{\numberline {3.4}Middleware de Extensão XGSN}{23}
+\contentsline {paragraph}{Abordagem geral}{24}
+\contentsline {paragraph}{Aspectos de gerenciamento de ontologia}{24}
+\contentsline {paragraph}{Arquitetura}{24}
+\contentsline {paragraph}{Exemplos}{24}
+\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {4\ --}Plataforma OpenIoT}{26}
+\contentsline {section}{\numberline {4.1}Aplicação}{27}
+\contentsline {paragraph}{Definições}{27}
+\contentsline {paragraph}{Apresentação}{27}
+\contentsline {paragraph}{Configuração e Monitoramento}{27}
+\contentsline {section}{\numberline {4.2}Virtualização}{27}
+\contentsline {subsection}{\numberline {4.2.1}Scheduler}{27}
+\contentsline {paragraph}{Seleção de Sensores e Wrappers}{27}
+\contentsline {paragraph}{Ativação "indireta" Sensores Virtuais}{28}
+\contentsline {paragraph}{Armazenamento e execução de solicitações}{28}
+\contentsline {paragraph}{Controle do estado das solicitações}{28}
+\contentsline {paragraph}{Controle de acesso}{28}
+\contentsline {subsection}{\numberline {4.2.2}Serviços de entrega e gestão de aplicativos}{28}
+\contentsline {subsection}{\numberline {4.2.3}Plataforma de relacionamento dos dados - LSM-Light}{30}
+\contentsline {section}{\numberline {4.3}Física}{30}
+\contentsline {subsection}{\numberline {4.3.1}Middleware de controle de sensores (XGSN)}{30}
+\contentsline {subsection}{\numberline {4.3.2}Controle dinâmico de Sensores}{31}
+\contentsline {section}{\numberline {4.4}Principais objetos na plataforma OpenIoT}{31}
+\contentsline {subsection}{\numberline {4.4.1}OSDSpec}{31}
+\contentsline {subsection}{\numberline {4.4.2}OSMO}{31}
+\contentsline {subsection}{\numberline {4.4.3}SensorTypes}{31}
+\contentsline {subsection}{\numberline {4.4.4}DescriptiveIDs}{32}
+\contentsline {subsection}{\numberline {4.4.5}SdumServiceResultSet}{32}
+\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {5\ --}Arquitetura CA4IoT}{37}
+\contentsline {subsection}{\numberline {5.0.1}Capacidades funcionais da plataforma}{37}
+\contentsline {paragraph}{Conectar sensores ao middleware IoT facilmente}{38}
+\contentsline {paragraph}{Entender e manter informações de contexto}{38}
+\contentsline {paragraph}{Extrair informações de contexto de alto nível}{38}
+\contentsline {paragraph}{Entender o problema do usuário}{39}
+\contentsline {paragraph}{Preencher a lacuna entre usuário e sensores}{39}
+\contentsline {paragraph}{Gerenciar usuários}{39}
+\contentsline {subsection}{\numberline {5.0.2}Divisão em Camadas}{39}
+\contentsline {paragraph}{Camada de usuário}{39}
+\contentsline {paragraph}{Dados, semântica e definiçao de contextos}{39}
+\contentsline {paragraph}{Lógica e processamento de dados}{40}
+\contentsline {paragraph}{Descoberta de semântica e contextos}{40}
+\contentsline {paragraph}{Aquisição dos dados de sensores}{40}
+\contentsline {paragraph}{Camada de detecção}{40}
+\contentsline {subsection}{\numberline {5.0.3}Componentes e Elementos da arquitetura}{40}
+\contentsline {paragraph}{Componentes}{41}
+\contentsline {subsection}{\numberline {5.0.4}Middleware CASCoM}{41}
+\contentsline {part}{\numberline {III}Proposta de trabalho}{46}
+\contentsline {chapter}{Cap\'{\i }tulo\ \numberline {6\ --}Proposta}{47}
+\contentsline {section}{\numberline {6.1}Arquitetura Proposta}{47}
+\contentsline {subsection}{\numberline {6.1.1}Descrição}{47}
+\contentsline {section}{\numberline {6.2}Modelo Utilizado}{47}
+\contentsline {subsection}{\numberline {6.2.1}Modelo de conhecimento}{47}
+\contentsline {subsection}{\numberline {6.2.2}Definição dos Objetos}{47}
+\contentsline {subsection}{\numberline {6.2.3}Estrutura em Grafo}{47}
+\contentsline {subsection}{\numberline {6.2.4}Processamento dos dados}{47}
+\contentsline {subsection}{\numberline {6.2.5}Processamento dos dados}{47}
+\contentsline {paragraph}{Modelo Básico}{47}
+\contentsline {paragraph}{Modelo Estático Complexo}{47}
+\contentsline {paragraph}{Modelo Dinâmico Complexo}{48}
+\contentsline {section}{\numberline {6.3}Social Virtual Objects}{50}
+\contentsline {section}{\numberline {6.4}Social Virtual Objects}{50}
 \contentsline {chapter}{Refer\^encias}{54}
 \contentsline {chapter}{Glossário}{55}

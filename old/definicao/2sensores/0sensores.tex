@@ -1,0 +1,43 @@
+\section{Classificação de componentes}
+Este capítulo apresenta uma visão geral sobre o conceito por trás dos principais tipos de componentes utilizados e sua aplicabilidade no contexto de IoT, mais específicamente na agricultura. 
+
+Antes de analisar separadamente os diferentes tipos de componentes, algumas premissas básicas em relação à circuitos eletrônicos precisam ser estabelecidas, de forma a priorizar suas funcionalidades dentro do ecossistema de IoT nos projetos inteligentes (Análise de materiais e outros aspéctos físicos e quimicos estão fora do escopo do trabalho).
+
+\acronym{CMOS}{Complementary metal?oxide?semiconductor}
+
+Como atualmente grande parte dos circuitos integrados utilizam a tecnologia CMOS por ter um custo menor, baixo consumo de energia e boa precisão quando utilizado em condições ambientais normais, apenas modelos de componentes que utilizam essa tecnolgia de fabricação foram utilizados.
+
+O elemento responsável pela conversão entre as diferentes formas de energia utilizadas pelos componentes é o transdutor, exercendo papel fundamental no funcionamento da maioria dos sensores e atuadores figura [\figurename{processobasico}]. Porém, o que difere sensores e atuadores de simples transdutores em um circuito elétrico vai além da conversão de energias.
+
+
+%TEIXEIRA, Mariane Mendes.	"Transdutor"; Brasil Escola. Disponível em <http://brasilescola.uol.com.br/fisica/transdutor.htm>. Acesso em 16 de agosto de 2017.
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/conversao}
+	\caption{Exemplo de conversão feita com sensores}
+	\label{fig:conversao}
+\end{figure}
+
+Sensores e atuadores são circuitos eletrônicos responsáveis pela leitura ou alteração do estado de elementos em um ambiente controlado (figura \figurename{conversao}). Geralmente, nos equipamentos eletrônicos, transdutores são utilizados pelos atuadores na transformação de sinais elétricos em corrente/tensão ou mesmo em conjunto com os sensores para conversão dos diferentes tipos de energia como movimento, radiação, velocidade, calor, humidade, luminosidade e etc. em sinais elétricos possibilitando que sejam medidos e utilizados nas plataformas computacionais.
+
+Em projetos de IoT, para um objeto ser considerado inteligente, ele precisa satisfazer algumas regras de forma a criar um ecossistema inteligente  alguma inteligência automatizar alguma  as seguintes etapas  listadas na figura [\figurename{processobasico}] onde dentro de uma rede 
+
+\begin{figure}[tbh!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{../images/processobasico}
+	\caption{Processo básico em um objeto inteligente}
+	\label{fig:processobasico}
+\end{figure}
+
+Podemos diferenciar os componentes utilizados neste trabalho utilizando as seguintes propriedades:
+
+\paragraph{Componentes passivo ou ativo} 
+%http://digital.ni.com/public.nsf/allkb/CDC750FCF5E3D03C86257A2300570182
+Componentes ativos geram corrente ou tensão em resposta aos estímulo recebidos, não exigindo uma fonte externa de energia para gerar o sinal de saída, como em uma fotocélula que gera uma tensão diretamente relacionada com a quantidade de luz incidente sobre ela. Por outro lado, componentes passivos precisam da inclusão de circuitos de alimentação para conseguir produzir os sinais de saída, já que quando estimulados produzem apenas mudanças de capacitância, resistência ou indutância.
+
+\paragraph{Componentes de entrada ou saída} Essa categorização serve para diferenciar se um sinal ou elemento do ambiente está sendo "Sentido" ou "Controlado".
+Componentes que possuem a função de entrada são chamados de sensores pelo fato de identificarem modificações físicas de uma característica em resposta ao estímulo do amabiente em observação, fazendo a conversão para outra grandeza física. Em contraste, componentes com função de saída são chamados de atuadores por controlarem a ação de outros elementos ou componentes encontrados no ambiente.
+
+\paragraph{Componentes analógico ou digital} Após o processo de conversão dos sinais de entrada lidos pelos sensores, eles são mensurados em circuitos eletrônicos ao longo de um período de tempo pré-definido, medindo assim seu sinal de saída que pode ser tanto analógico assumindo um valor de saída contínuo dentro da faixa de operação especificada pelo equipamento, quanto digital assumindo valores de saída discretos (ex: 0/1, on/off), ou seja assumindo valores lógicos binários.
+
